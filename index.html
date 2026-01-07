@@ -4,309 +4,224 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>GProA Technology | Carta de Servicios</title>
-
-  <!-- Fallback mínimo: NUNCA queda en blanco -->
-  <style>
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      color: #0f172a;
-      background: #ffffff;
-    }
-  </style>
-
-  <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            brand: {
-              50: '#eef2ff',
-              100: '#e0e7ff',
-              200: '#c7d2fe',
-              300: '#a5b4fc',
-              400: '#818cf8',
-              500: '#6366f1',
-              600: '#4f46e5',
-              700: '#4338ca',
-              800: '#3730a3',
-              900: '#312e81',
-            }
-          },
-          fontFamily: {
-            sans: ['system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
-          }
-        }
-      }
-    }
-  </script>
 </head>
 
-<body class="bg-slate-50 text-slate-900 leading-relaxed antialiased">
+<body class="bg-slate-50 text-slate-800">
 
-  <!-- CONTENEDOR GENERAL -->
-  <div class="max-w-4xl mx-auto px-8 py-16 lg:px-12 lg:py-20">
-
-    <!-- HEADER -->
-    <header class="mb-20 pb-10 border-b border-slate-200">
-      <div class="flex items-center justify-between mb-6">
-        <div class="flex items-center gap-3">
-          <div class="w-10 h-10 bg-brand-600 rounded-lg flex items-center justify-center shadow-sm">
-            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-            </svg>
-          </div>
-          <span class="text-xs font-semibold tracking-[0.2em] text-brand-600 uppercase">Partner Tecnológico</span>
-        </div>
-        <a href="assets/pdfs/GProA_Partner_Brief.pdf" download="GProA_Partner_Brief.pdf" class="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-slate-600 bg-slate-100 rounded-lg hover:bg-slate-200 hover:text-slate-900 transition-colors" title="Descargar PDF">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
-          </svg>
-          Guardar PDF
-        </a>
-      </div>
-      <h1 class="text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight mb-6">
-        GProA Technology
-      </h1>
-      <p class="text-xl text-slate-600 max-w-2xl leading-relaxed">
-        Partners tecnológicos especializados en la intersección de
-        <span class="font-medium text-slate-900">IA Generativa, automatización industrial y desarrollo de software avanzado</span>.
-      </p>
-    </header>
-
-    <!-- INTRODUCCIÓN -->
-    <section class="mb-20">
-      <div class="flex items-center gap-4 mb-8">
-        <div class="w-1 h-8 bg-brand-600 rounded-full"></div>
-        <h2 class="text-2xl font-semibold text-slate-900 tracking-tight">
-          Introducción
-        </h2>
-      </div>
-      <div class="space-y-6 text-lg text-slate-600 leading-relaxed max-w-3xl ml-5">
-        <p>
-          En proyectos donde la complejidad técnica y los plazos ajustados demandan
-          partners especializados, la experiencia en IA y automatización diferencia a los equipos de alto rendimiento.
-        </p>
-        <p>
-          La integración efectiva de sistemas inteligentes complementa las capacidades existentes
-          y acelera la entrega de soluciones complejas.
-        </p>
-        <p>
-          En GProA Technology diseñamos e implementamos componentes de IA y automatización
-          que se integran en arquitecturas existentes, complementando las capacidades de equipos técnicos.
-        </p>
-        <p>
-          Facilitamos la integración de capacidades de IA y automatización en proyectos
-          de consultores, integradores y equipos técnicos corporativos.
-        </p>
-      </div>
-    </section>
-
-    <!-- ÁREAS DE ESPECIALIZACIÓN -->
-    <section class="mb-20">
-      <div class="flex items-center gap-4 mb-10">
-        <div class="w-1 h-8 bg-brand-600 rounded-full"></div>
-        <h2 class="text-2xl font-semibold text-slate-900 tracking-tight">
-          Áreas de Especialización
-        </h2>
-      </div>
-
-      <div class="grid gap-6">
-
-        <!-- IA -->
-        <article class="bg-white rounded-xl p-8 shadow-sm border border-slate-100 hover:shadow-md hover:border-slate-200 transition-all duration-300">
-          <div class="flex items-center gap-3 mb-5">
-            <div class="w-8 h-8 bg-brand-50 rounded-lg flex items-center justify-center">
-              <svg class="w-4 h-4 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
-              </svg>
-            </div>
-            <h3 class="text-xl font-semibold text-slate-900">
-              Inteligencia Artificial Aplicada
-            </h3>
-          </div>
-          <ul class="space-y-3 text-slate-600 ml-11">
-            <li class="flex items-start gap-2">
-              <span class="w-1.5 h-1.5 bg-brand-400 rounded-full mt-2.5 flex-shrink-0"></span>
-              <span>Robótica y procesos autónomos basados en IA.</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="w-1.5 h-1.5 bg-brand-400 rounded-full mt-2.5 flex-shrink-0"></span>
-              <span>Agentes especializados para análisis legal, normativo y técnico.</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="w-1.5 h-1.5 bg-brand-400 rounded-full mt-2.5 flex-shrink-0"></span>
-              <span>Copilots personalizados integrados en flujos corporativos.</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="w-1.5 h-1.5 bg-brand-400 rounded-full mt-2.5 flex-shrink-0"></span>
-              <span>Analítica avanzada y modelos predictivos con Python.</span>
-            </li>
-          </ul>
-        </article>
-
-        <!-- FULL STACK -->
-        <article class="bg-white rounded-xl p-8 shadow-sm border border-slate-100 hover:shadow-md hover:border-slate-200 transition-all duration-300">
-          <div class="flex items-center gap-3 mb-5">
-            <div class="w-8 h-8 bg-brand-50 rounded-lg flex items-center justify-center">
-              <svg class="w-4 h-4 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
-              </svg>
-            </div>
-            <h3 class="text-xl font-semibold text-slate-900">
-              Desarrollo Full Stack Inteligente
-            </h3>
-          </div>
-          <ul class="space-y-3 text-slate-600 ml-11">
-            <li class="flex items-start gap-2">
-              <span class="w-1.5 h-1.5 bg-brand-400 rounded-full mt-2.5 flex-shrink-0"></span>
-              <span>Plataformas web y aplicaciones empresariales con Next.js y React.</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="w-1.5 h-1.5 bg-brand-400 rounded-full mt-2.5 flex-shrink-0"></span>
-              <span>Arquitecturas modernas, escalables y mantenibles.</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="w-1.5 h-1.5 bg-brand-400 rounded-full mt-2.5 flex-shrink-0"></span>
-              <span>Integración avanzada con APIs de IA y sistemas legacy.</span>
-            </li>
-          </ul>
-        </article>
-
-        <!-- AUTOMATIZACIÓN -->
-        <article class="bg-white rounded-xl p-8 shadow-sm border border-slate-100 hover:shadow-md hover:border-slate-200 transition-all duration-300">
-          <div class="flex items-center gap-3 mb-5">
-            <div class="w-8 h-8 bg-brand-50 rounded-lg flex items-center justify-center">
-              <svg class="w-4 h-4 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
-              </svg>
-            </div>
-            <h3 class="text-xl font-semibold text-slate-900">
-              Automatización y Sistemas Especializados
-            </h3>
-          </div>
-          <ul class="space-y-3 text-slate-600 ml-11">
-            <li class="flex items-start gap-2">
-              <span class="w-1.5 h-1.5 bg-brand-400 rounded-full mt-2.5 flex-shrink-0"></span>
-              <span>Automatización de reportes técnicos y cálculos complejos (GECRAI).</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="w-1.5 h-1.5 bg-brand-400 rounded-full mt-2.5 flex-shrink-0"></span>
-              <span>Sistemas de gestión especializados como Búfalos para control de accesos y métricas.</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="w-1.5 h-1.5 bg-brand-400 rounded-full mt-2.5 flex-shrink-0"></span>
-              <span>Optimización de procesos industriales y administrativos.</span>
-            </li>
-          </ul>
-        </article>
-
-      </div>
-    </section>
-
-    <!-- METODOLOGÍA -->
-    <section class="mb-20">
-      <div class="flex items-center gap-4 mb-8">
-        <div class="w-1 h-8 bg-brand-600 rounded-full"></div>
-        <h2 class="text-2xl font-semibold text-slate-900 tracking-tight">
-          Desarrollo Autónomo Guiado por IA
-        </h2>
-      </div>
-
-      <div class="bg-white rounded-xl p-10 shadow-sm border border-slate-100 mb-8">
-        <p class="text-lg text-slate-600 leading-relaxed max-w-3xl">
-          Nuestro diferenciador es el enfoque de
-          <span class="font-medium text-slate-900">Desarrollo Autónomo Guiado por IA</span>,
-          que combina herramientas avanzadas de inteligencia artificial con ingeniería de software rigurosa.
-        </p>
-      </div>
-
-      <div class="grid gap-4 ml-5">
-        <div class="flex items-start gap-4 bg-white rounded-lg p-5 shadow-sm border border-slate-100 hover:border-brand-200 transition-colors duration-200">
-          <div class="w-8 h-8 bg-brand-600 text-white rounded-full flex items-center justify-center text-sm font-semibold flex-shrink-0">1</div>
-          <div>
-            <h4 class="font-semibold text-slate-900 mb-1">Planificación Arquitectónica:</h4>
-            <p class="text-slate-600">análisis técnico y de negocio, definición de arquitectura y stack.</p>
-          </div>
-        </div>
-        <div class="flex items-start gap-4 bg-white rounded-lg p-5 shadow-sm border border-slate-100 hover:border-brand-200 transition-colors duration-200">
-          <div class="w-8 h-8 bg-brand-600 text-white rounded-full flex items-center justify-center text-sm font-semibold flex-shrink-0">2</div>
-          <div>
-            <h4 class="font-semibold text-slate-900 mb-1">Desarrollo Guiado por IA:</h4>
-            <p class="text-slate-600">uso estructurado de Cursor y GitHub Copilot con validación humana.</p>
-          </div>
-        </div>
-        <div class="flex items-start gap-4 bg-white rounded-lg p-5 shadow-sm border border-slate-100 hover:border-brand-200 transition-colors duration-200">
-          <div class="w-8 h-8 bg-brand-600 text-white rounded-full flex items-center justify-center text-sm font-semibold flex-shrink-0">3</div>
-          <div>
-            <h4 class="font-semibold text-slate-900 mb-1">Integración y Automatización:</h4>
-            <p class="text-slate-600">APIs de IA, sistemas legacy y procesos autónomos.</p>
-          </div>
-        </div>
-        <div class="flex items-start gap-4 bg-white rounded-lg p-5 shadow-sm border border-slate-100 hover:border-brand-200 transition-colors duration-200">
-          <div class="w-8 h-8 bg-brand-600 text-white rounded-full flex items-center justify-center text-sm font-semibold flex-shrink-0">4</div>
-          <div>
-            <h4 class="font-semibold text-slate-900 mb-1">Validación y Optimización Continua:</h4>
-            <p class="text-slate-600">pruebas, monitoreo y mejora basada en datos reales.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- COLABORACIÓN -->
-    <section class="mb-20">
-      <div class="flex items-center gap-4 mb-8">
-        <div class="w-1 h-8 bg-brand-600 rounded-full"></div>
-        <h2 class="text-2xl font-semibold text-slate-900 tracking-tight">
-          Modelo de Colaboración
-        </h2>
-      </div>
-      <div class="bg-slate-900 rounded-xl p-10 shadow-lg ml-5">
-        <div class="space-y-6 text-slate-300 leading-relaxed">
-          <p>
-            Operamos como <strong class="text-white">partner técnico especializado</strong> para consultores,
-            integradores y equipos corporativos que requieren capacidades avanzadas en proyectos de alta complejidad.
-          </p>
-          <p>
-            Nos integramos eficientemente en fases de diseño arquitectónico,
-            desarrollo crítico, automatización e innovación tecnológica.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="mb-16">
-      <div class="flex items-center gap-4 mb-8">
-        <div class="w-1 h-8 bg-brand-600 rounded-full"></div>
-        <h2 class="text-2xl font-semibold text-slate-900 tracking-tight">
-          Próximo Paso
-        </h2>
-      </div>
-      <div class="bg-brand-50 border border-brand-100 rounded-xl p-8 ml-5">
-        <p class="text-lg text-slate-700 leading-relaxed">
-          Recomendamos iniciar con una consultoría diagnóstica para evaluar procesos,
-          identificar oportunidades de IA y automatización,
-          y definir una hoja de ruta tecnológica alineada a objetivos corporativos.
-        </p>
-      </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="mt-16 pt-8 border-t border-slate-200">
-      <div class="flex items-center justify-between">
-        <div class="text-sm text-slate-500">
-          <p class="font-medium text-slate-700 mb-1">GProA Technology</p>
-          <p>IA Aplicada · Automatización · Software Avanzado</p>
-        </div>
-        <a href="https://www.gproatechnology.com" class="text-sm font-medium text-brand-600 hover:text-brand-700 transition-colors">
-          www.gproatechnology.com
-        </a>
-      </div>
-    </footer>
-
+<!-- HEADER -->
+<header class="bg-white border-b border-slate-200">
+  <div class="max-w-6xl mx-auto px-8 py-10">
+    <h1 class="text-3xl font-bold text-slate-900">GProA Technology</h1>
+    <p class="text-slate-600 mt-2">
+      Inteligencia Artificial · Automatización · Software de Alta Gama
+    </p>
   </div>
+</header>
+
+<!-- HERO -->
+<section class="max-w-6xl mx-auto px-8 py-16">
+  <h2 class="text-4xl font-semibold text-slate-900 leading-tight">
+    Sistemas que aprenden, evolucionan<br/>
+    y optimizan procesos complejos
+  </h2>
+  <p class="mt-6 max-w-3xl text-lg text-slate-600">
+    En GProA Technology diseñamos soluciones avanzadas en la intersección
+    entre Inteligencia Artificial Generativa, automatización y desarrollo
+    de software empresarial.
+  </p>
+</section>
+
+<!-- QUIENES SOMOS -->
+<section class="bg-white">
+  <div class="max-w-6xl mx-auto px-8 py-16">
+    <h3 class="text-2xl font-semibold text-slate-900 mb-6">Quiénes Somos</h3>
+    <p class="text-slate-600 max-w-4xl leading-relaxed">
+      Somos una firma tecnológica orgullosamente mexicana especializada en diseñar,
+      modernizar y operar soluciones digitales avanzadas para entornos corporativos e industriales 
+      donde la eficiencia, la precisión y la escalabilidad son críticas.
+
+      Nuestro trabajo abarca desde automatización industrial 4.0 y migraciones tecnológicas, 
+      hasta la construcción de plataformas de software inteligentes, integrando ingeniería de alto nivel, 
+      automatización de procesos, analítica avanzada e Inteligencia Artificial Generativa aplicada para transformar 
+      operaciones complejas en sistemas robustos, confiables y evolutivos.
+    </p>
+  </div>
+</section>
+
+<!-- QUE HACEMOS -->
+<section class="max-w-6xl mx-auto px-8 py-16">
+  <h3 class="text-2xl font-semibold text-slate-900 mb-10">Qué Hacemos</h3>
+
+  <div class="grid md:grid-cols-2 gap-6">
+    <!-- Inteligencia Artificial Aplicada -->
+    <div class="p-6 bg-white rounded-xl border">
+      <h4 class="font-semibold text-slate-900 mb-3">Inteligencia Artificial Aplicada</h4>
+      <p class="text-slate-600 text-sm leading-relaxed">
+        Implementamos modelos de IA Generativa para automatización de procesos técnicos y corporativos. 
+        Desarrollo de agentes especializados para análisis documental, cumplimiento normativo, 
+        búsqueda contextual y generación automatizada de reportes técnicos. Intervenimos desde la 
+        evaluación de casos de uso hasta el despliegue y operación de soluciones de IA en entornos enterprise.
+      </p>
+    </div>
+
+    <!-- Automatización Industrial & Control -->
+    <div class="p-6 bg-white rounded-xl border">
+      <h4 class="font-semibold text-slate-900 mb-3">Automatización Industrial & Control</h4>
+      <p class="text-slate-600 text-sm leading-relaxed">
+        Diseño e implementación de sistemas de control para entornos Industriales 4.0. 
+        Elaboración de ingenierías de control, programación de PLCs, integración de sistemas 
+        SCADA y desarrollo de soluciones de robótica de procesos. Enfocamos en eficiencia operativa, 
+        trazabilidad y reducción de intervención manual en entornos de producción.
+      </p>
+    </div>
+
+    <!-- Desarrollo de Software & Plataformas -->
+    <div class="p-6 bg-white rounded-xl border">
+      <h4 class="font-semibold text-slate-900 mb-3">Desarrollo de Software & Plataformas</h4>
+      <p class="text-slate-600 text-sm leading-relaxed">
+        Construcción de plataformas web y aplicaciones empresariales con arquitecturas 
+        modernas y escalables. Desarrollo full stack inteligente, APIs robustas, integraciones con 
+        sistemas legacy y desarrollo de portales técnicos. Aplicamos metodologías de Desarrollo Autónomo 
+        Guiado por IA para acelerar tiempos de entrega sin comprometer calidad ni seguridad.
+      </p>
+    </div>
+
+    <!-- Integración, Migraciones y Modernización -->
+    <div class="p-6 bg-white rounded-xl border">
+      <h4 class="font-semibold text-slate-900 mb-3">Integración, Migraciones y Modernización</h4>
+      <p class="text-slate-600 text-sm leading-relaxed">
+        Migraciones tecnológicas y modernización de sistemas de automatización. Sustitución y actualización de PLCs, integración de sistemas IT con entornos OT, y creación de puentes entre sistemas de negocio y sistemas industriales. Gestionamos transiciones complejas minimizando riesgo operativo y manteniendo continuidad de producción.
+      </p>
+    </div>
+
+    <!-- Gestión Técnica de Proyectos -->
+    <div class="p-6 bg-white rounded-xl border">
+      <h4 class="font-semibold text-slate-900 mb-3">Gestión Técnica de Proyectos</h4>
+      <p class="text-slate-600 text-sm leading-relaxed">
+        Dirección y gestión integral de proyectos de automatización, digitalización y transformación tecnológica. Desde la definición de alcances técnicos hasta la puesta en marcha y estabilización. Gestionamos catálogos de conceptos técnicos, estimación de esfuerzos, planificación de recursos y seguimiento de hitos críticos para proyectos industriales y corporativos.
+      </p>
+    </div>
+
+    <!-- Automatización de Procesos Técnicos -->
+    <div class="p-6 bg-white rounded-xl border">
+      <h4 class="font-semibold text-slate-900 mb-3">Automatización de Procesos Técnicos</h4>
+      <p class="text-slate-600 text-sm leading-relaxed">
+        Eliminación de cálculos manuales y tareas repetitivas mediante automatización inteligente. Generación automática de reportes técnicos, cálculo de métricas operativas, consolidación de datos multipunto y producción de documentación técnica estandarizada. Incrementamos precisión y reducimos tiempos de ciclo en procesos de ingeniería y operaciones.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- METRICAS -->
+<section class="bg-white">
+  <div class="max-w-6xl mx-auto px-8 py-16">
+    <h3 class="text-2xl font-semibold text-slate-900 mb-10">
+      Impacto Operativo Medible
+    </h3>
+
+    <!-- BARRAS -->
+    <div class="space-y-6 max-w-xl">
+      <div>
+        <div class="flex justify-between text-sm mb-1">
+          <span>Reportes técnicos</span><span>-82%</span>
+        </div>
+        <div class="h-3 bg-slate-200 rounded">
+          <div class="h-3 bg-slate-800 rounded" style="width:82%"></div>
+        </div>
+      </div>
+
+      <div>
+        <div class="flex justify-between text-sm mb-1">
+          <span>Análisis de datos</span><span>-76%</span>
+        </div>
+        <div class="h-3 bg-slate-200 rounded">
+          <div class="h-3 bg-slate-800 rounded" style="width:76%"></div>
+        </div>
+      </div>
+
+      <div>
+        <div class="flex justify-between text-sm mb-1">
+          <span>Integración de sistemas</span><span>-65%</span>
+        </div>
+        <div class="h-3 bg-slate-200 rounded">
+          <div class="h-3 bg-slate-800 rounded" style="width:65%"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- KPIS -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-14">
+      <div class="p-4 border rounded-lg text-center">
+        <div class="text-2xl font-bold">3.5x</div>
+        <div class="text-sm text-slate-500">Velocidad desarrollo</div>
+      </div>
+      <div class="p-4 border rounded-lg text-center">
+        <div class="text-2xl font-bold">99.2%</div>
+        <div class="text-sm text-slate-500">Precisión</div>
+      </div>
+      <div class="p-4 border rounded-lg text-center">
+        <div class="text-2xl font-bold">40%</div>
+        <div class="text-sm text-slate-500">Menos errores</div>
+      </div>
+      <div class="p-4 border rounded-lg text-center">
+        <div class="text-2xl font-bold">24/7</div>
+        <div class="text-sm text-slate-500">Operación autónoma</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DIFERENCIADOR -->
+<section class="max-w-6xl mx-auto px-8 py-16">
+  <h3 class="text-2xl font-semibold text-slate-900 mb-6">
+    Nuestro Diferenciador
+  </h3>
+  <p class="text-slate-600 max-w-4xl leading-relaxed">
+    Aplicamos un enfoque de <strong>Desarrollo Autónomo Guiado por IA</strong>,
+    combinando experiencia humana con herramientas como Cursor, GitHub Copilot
+    y APIs de Inteligencia Artificial, logrando reducir tiempos de entrega
+    sin comprometer calidad, seguridad ni trazabilidad técnica.
+  </p>
+</section>
+
+<!-- CTA -->
+<section class="bg-slate-900 text-white">
+  <div class="max-w-6xl mx-auto px-8 py-16">
+    <h3 class="text-3xl font-semibold mb-4">
+      Próximo Paso
+    </h3>
+    <p class="text-slate-300 max-w-3xl mb-8">
+      Le invitamos a una sesión de diagnóstico estratégico para identificar
+      oportunidades donde la IA y la automatización generen impacto real y medible.
+    </p>
+    
+    <!-- Botón de descarga PDF -->
+    <div class="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
+      <a 
+        href="assets/pdfs/GProA_Partner_Brief.pdf" 
+        download="GProA_Partner_Brief.pdf"
+        class="inline-flex items-center gap-2 px-6 py-3 bg-white text-slate-900 font-medium rounded-lg hover:bg-slate-100 transition-colors duration-200"
+        aria-label="Descargar Carta de Servicios en formato PDF"
+      >
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+        </svg>
+        Descargar Carta de Servicios (PDF)
+      </a>
+      <span class="text-sm text-slate-400">
+        Versión lista para impresión
+      </span>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-black text-slate-400">
+  <div class="max-w-6xl mx-auto px-8 py-8 text-sm">
+    © GProA Technology · Inteligencia Artificial y Automatización
+  </div>
+</footer>
 
 </body>
 </html>
