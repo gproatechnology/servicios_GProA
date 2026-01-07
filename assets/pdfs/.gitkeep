@@ -1,0 +1,5 @@
+# Carpeta de PDFs
+# Para añadir un PDF:
+# 1. Coloca el archivo PDF en esta carpeta
+# 2. Actualiza la ruta en index.html si es necesario
+# 3. El atributo 'download' define el nombre del archivo al descargar
