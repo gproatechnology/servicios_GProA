@@ -46,3 +46,13 @@ El documento es un archivo HTML estático. Para visualizarlo:
 - O levantar un servidor local (ver `run.txt` para instrucciones).
 
 El diseño está optimizado para lectura en pantalla e impresión, con estilos proporcionados vía Tailwind CSS desde CDN.
+
+## Versión PDF
+
+Para generar una versión PDF profesional del Partner Brief:
+
+1. Abre `partner-brief-print.html` en tu navegador
+2. Usa "Guardar como PDF" (Ctrl+P / Cmd+P)
+3. Consulta `PDF_GENERATION.md` para métodos alternativos con wkhtmltopdf o Puppeteer
+
+El botón "Guardar PDF" en `index.html` enlaza a la versión optimizada para impresión.
