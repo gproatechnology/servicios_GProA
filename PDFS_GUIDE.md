@@ -46,6 +46,17 @@
 </a>
 ```
 
+## Mejores Prácticas
+
+- **Formato y Calidad**: Los PDFs deben estar en formato PDF válido, optimizados para web (tamaño reducido) y con texto seleccionable
+- **Nomenclatura**: Usar guiones (-) en lugar de espacios, incluir fecha o versión cuando aplique (ej: `GProA_Partner_Brief_2025.pdf`)
+- **Accesibilidad**: Incluir texto alternativo y asegurar que los PDFs sean accesibles
+- **Versionado**: Mantener versiones anteriores en subcarpetas como `archived/` si es necesario
+
+## Automatización Futura
+
+En versiones futuras (v1.2), se implementará generación automática de PDFs desde el HTML usando herramientas como Puppeteer o wkhtmltopdf, integrada con los workflows de CI/CD.
+
 ## Notas
 
 - Los PDFs deben estar en formato PDF válido

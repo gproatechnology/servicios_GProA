@@ -1,8 +1,36 @@
-# Partner Brief | GProA Technology
+# GProA Technology | Partner Brief
 
-## Propósito
+[![GProA Technology](assets/images/GProA_Logo2.jpeg)](https://gproatechnology.com)
 
-Este repositorio contiene el Partner Brief de GProA Technology, un documento HTML estático que presenta las capacidades técnicas y el enfoque metodológico de la firma para colaboración con consultores, integradores y equipos técnicos corporativos.
+**Transformamos procesos industriales con IA Generativa y desarrollo full-stack especializado**
+
+Somos la empresa mexicana líder en soluciones tecnológicas integrales, combinando Inteligencia Artificial, automatización industrial y software nativo para Windows. Nuestro enfoque único nos permite entregar sistemas que aprenden, optimizan y evolucionan, generando un impacto real en la productividad y eficiencia de nuestros clientes.
+
+## Servicios Clave
+
+### 🚀 Desarrollo Full-Stack Especializado
+- **Frontend de Vanguardia**: Interfaces avanzadas con React, Next.js y Tailwind CSS
+- **Backend & IA**: APIs robustas, NLP y modelos de IA como GPT
+- **Automatización Industrial**: Integración con PLC, SCADA y sistemas legacy
+
+### 💻 Software Nativo para Windows
+- Aplicaciones ejecutables (.exe) de alto rendimiento
+- Cálculos de ingeniería eléctrica (NOM-001-SEDE-2012)
+- Sistemas ERP/CRM para gimnasios y gestión empresarial
+
+### 🤖 IA en Sectores Estratégicos
+- **Salud**: Monitoreo predictivo de diabetes con machine learning
+- **Ingeniería**: Asistentes virtuales para cálculos regulatorios
+- **Domótica**: Automatización inteligente de hogares
+
+## Beneficios para Nuestros Clientes
+
+- **Reducción de Costos**: Hasta 82% menos tiempo en reportes técnicos
+- **Aceleración de Desarrollo**: 3.5x más rápido con IA guiada
+- **Soluciones Escalables**: Arquitecturas que crecen con su negocio
+- **Soporte Local**: Empresa 100% mexicana con presencia en Guanajuato
+
+## Tecnologías y Metodología
 
 ## Contenido del Documento
 
@@ -12,9 +40,23 @@ El Partner Brief describe:
 - **Enfoque Metodológico**: Desarrollo Autónomo Guiado por IA, una metodología estructurada en cuatro fases que integra asistencia de inteligencia artificial con control humano estricto.
 - **Modelo de Colaboración**: Rol de partner técnico especializado para proyectos de alta complejidad.
 
+## Proyectos Destacados
+
+### 🔧 GECRAI 1.1 - IA para Ingeniería Eléctrica
+Asistente virtual con IA que genera memorias de cálculo eléctrico en PDF, optimiza conductores y valida cumplimiento NOM-001-SEDE-2012.
+
+### 🏋️ Sistema Búfalos 2.0 - ERP/CRM con IA
+Plataforma completa para gimnasios con pagos domiciliarios, análisis predictivo de clientes y dashboards ejecutivos.
+
+### 🩺 GlucAI 1.5 - IA en Salud
+Sistema predictivo de episodios de diabetes con machine learning, wearables y reportes clínicos automáticos.
+
+### 🏠 DomotIA 1.0 - Domótica Inteligente
+Control inteligente de hogares con IA que aprende patrones de comportamiento y optimiza consumo energético.
+
 ## Desarrollo Autónomo Guiado por IA
 
-La metodología de GProA Technology se estructura en cuatro fases:
+Nuestra metodología patentada integra IA con control humano estricto:
 
 1. **Planificación Arquitectónica**: Análisis técnico y de negocio, definición de arquitectura y stack tecnológico.
 2. **Desarrollo Guiado por IA**: Uso estructurado de herramientas como Cursor y GitHub Copilot con validación humana en cada etapa.
@@ -23,36 +65,54 @@ La metodología de GProA Technology se estructura en cuatro fases:
 
 ## Casos de Uso Típicos
 
-El Partner Brief es relevante para:
+Ideal para:
 
-- Consultores tecnológicos que requieren capacidades complementarias en proyectos de IA y automatización.
-- Integradores que necesitan partners especializados para componentes de software inteligente.
-- Equipos corporativos que buscan complementar sus capacidades técnicas en iniciativas de transformación digital.
+- **Consultores Tecnológicos**: Capacidades complementarias en IA y automatización
+- **Integradores de Sistemas**: Partners especializados en software inteligente
+- **Equipos Corporativos**: Complemento técnico para transformación digital
+- **Empresas Industriales**: Soluciones verticales en manufactura 4.0 y salud
 
-## Público Objetivo
+## Contacto Estratégico
 
-El documento está dirigido a:
+**Juan Abdel Lugo Trejo** - CEO
+📧 admin@gproatechnology.com
+📞 +52 1 468 120 8570
 
-- Directores de TI y responsables de arquitectura empresarial.
-- Consultores de estrategia y transformación digital.
-- Integradores técnicos y equipos de desarrollo especializados.
-- Partners tecnológicos que buscan colaboración en proyectos complejos.
+**Israel Aldair Reséndiz Gálvez** - COO
+📧 aldaz.rega@gproatechnology.com
+📞 +52 1 419 129 6200
+
+📍 Calle Libramiento Norte No. 30, Col. Loma de Buenavista, San José Iturbide, Guanajuato, México. C.P. 37980
+
+## Implementación y Roadmap
+
+### 🚀 Estado Actual (v1.0)
+- ✅ Sitio web profesional desplegado en GitHub Pages
+- ✅ Validaciones automáticas de código
+- ✅ Documentación completa y estructurada
+
+### 📋 Próximas Versiones
+- **v1.1**: SEO + Accesibilidad
+- **v1.2**: PDF Automatizado
+
+Ver [`ROADMAP.md`](ROADMAP.md) para detalles completos.
 
 ## Visualización
 
-El documento es un archivo HTML estático. Para visualizarlo:
+El sitio es completamente estático. Para visualizarlo:
 
-- Abrir `index.html` directamente en un navegador web.
-- O levantar un servidor local (ver `run.txt` para instrucciones).
+- **Online**: [servicios_GProA](https://gproatechnology.github.io/servicios_GProA/) (GitHub Pages)
+- **Local**: Abrir `index.html` directamente en un navegador
+- **Servidor Local**: Ver `run.txt` para instrucciones
 
-El diseño está optimizado para lectura en pantalla e impresión, con estilos proporcionados vía Tailwind CSS desde CDN.
+Optimizado para lectura en pantalla e impresión con Tailwind CSS desde CDN.
 
-## Versión PDF
+## Descarga de Documentos
 
-Para generar una versión PDF profesional del Partner Brief:
+- **PDF Corporativo**: Disponible en el footer del sitio o [`assets/pdfs/GProA_Technology_Partner_Brief_2025.pdf`](assets/pdfs/GProA_Technology_Partner_Brief_2025.pdf)
+- **Guía de PDFs**: Ver [`PDFS_GUIDE.md`](PDFS_GUIDE.md) para gestión de documentos
 
-1. Abre `partner-brief-print.html` en tu navegador
-2. Usa "Guardar como PDF" (Ctrl+P / Cmd+P)
-3. Consulta `PDF_GENERATION.md` para métodos alternativos con wkhtmltopdf o Puppeteer
+---
 
-El botón "Guardar PDF" en `index.html` enlaza a la versión optimizada para impresión.
+*GProA Technology - Ingeniería Full-Stack · IA Generativa · Automatización Industrial · Software Windows*
+*Orgullosamente Mexicana · Calle Libramiento Norte No. 30, San José Iturbide, Guanajuato*

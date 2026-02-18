@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GProA Technology · IA Nativa y Soluciones Ejecutables</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800;14..32,900&display=swap" rel="stylesheet">
+    <style>
+        * { font-family: 'Inter', sans-serif; }
+        .gradient-premium { background: linear-gradient(145deg, #0B1120 0%, #1A2538 50%, #1F2A3F 100%); }
+        .gradient-ia { background: linear-gradient(90deg, #2563eb 0%, #7c3aed 60%, #06b6d4 100%); }
+        .text-gradient-ia {
+            background: linear-gradient(135deg, #3b82f6, #8b5cf6, #2dd4bf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-200 antialiased">
+    <!-- Header -->
+    <header class="gradient-premium py-6 border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <img src="assets/images/GProA_Logo2.jpeg" alt="GProA Logo" class="w-12 h-12 rounded-xl">
+                <div>
+                    <h1 class="text-xl font-bold text-white">GProA Technology</h1>
+                    <p class="text-slate-400 text-xs">IA Nativa · Soluciones Ejecutables</p>
+                </div>
+            </div>
+            <nav class="hidden md:flex items-center gap-6">
+                <a href="#servicios" class="text-slate-300 hover:text-white font-medium transition">Servicios</a>
+                <a href="#metodologia" class="text-slate-300 hover:text-white font-medium transition">Metodología</a>
+                <a href="solicitud-servicios.html" class="px-5 py-2 gradient-ia text-white font-semibold rounded-xl hover:shadow-xl hover:scale-105 transition">Solicitar Servicio</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-premium py-20">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h2 class="text-4xl md:text-6xl font-bold text-white mb-6">
+                Transformación Digital con <span class="text-gradient-ia">IA Nativa</span>
+            </h2>
+            <p class="text-slate-300 text-xl max-w-3xl mx-auto mb-10">
+                Desarrollamos soluciones de inteligencia artificial ejecutables, escalables y adaptadas a las necesidades de su industria. Desde agentic AI hasta integración industrial.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="solicitud-servicios.html" class="px-8 py-4 gradient-ia text-white font-bold rounded-xl text-lg hover:shadow-xl hover:scale-105 transition shadow-2xl shadow-blue-600/30">
+                    Solicitar Consultoría
+                </a>
+                <a href="#servicios" class="px-8 py-4 bg-slate-800 text-white font-semibold rounded-xl text-lg hover:bg-slate-700 transition border border-slate-700">
+                    Descubrir Servicios
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="py-20 bg-slate-950">
+        <div class="max-w-6xl mx-auto px-6">
+            <h3 class="text-3xl font-bold text-white text-center mb-12">Nuestros <span class="text-gradient-ia">Servicios</span></h3>
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Servicio 1 -->
+                <div class="bg-slate-900 p-8 rounded-2xl border border-slate-800 hover:border-blue-500/50 transition">
+                    <div class="w-12 h-12 bg-blue-600/20 rounded-xl flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">IA Nativa y Agentic AI</h4>
+                    <p class="text-slate-400">Sistemas de inteligencia artificial personalizados que se integran natively en sus procesos de negocio.</p>
+                </div>
+                <!-- Servicio 2 -->
+                <div class="bg-slate-900 p-8 rounded-2xl border border-slate-800 hover:border-purple-500/50 transition">
+                    <div class="w-12 h-12 bg-purple-600/20 rounded-xl flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/>
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">Software Ejecutable (.exe)</h4>
+                    <p class="text-slate-400">Aplicaciones standalone y soluciones edge computing listas para ejecutar en sus sistemas.</p>
+                </div>
+                <!-- Servicio 3 -->
+                <div class="bg-slate-900 p-8 rounded-2xl border border-slate-800 hover:border-cyan-500/50 transition">
+                    <div class="w-12 h-12 bg-cyan-600/20 rounded-xl flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/>
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">Cloud & SaaS</h4>
+                    <p class="text-slate-400">Arquitecturas cloud-native escalables y servicios SaaS para su transformación digital.</p>
+                </div>
+                <!-- Servicio 4 -->
+                <div class="bg-slate-900 p-8 rounded-2xl border border-slate-800 hover:border-green-500/50 transition">
+                    <div class="w-12 h-12 bg-green-600/20 rounded-xl flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">Automatización Inteligente</h4>
+                    <p class="text-slate-400">RPA combinado con IA para automatizar procesos repetitivos y aumentar eficiencia operativa.</p>
+                </div>
+                <!-- Servicio 5 -->
+                <div class="bg-slate-900 p-8 rounded-2xl border border-slate-800 hover:border-amber-500/50 transition">
+                    <div class="w-12 h-12 bg-amber-600/20 rounded-xl flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">Transformación Digital / BI</h4>
+                    <p class="text-slate-400">Análisis de datos y business intelligence para decisiones basadas en datos.</p>
+                </div>
+                <!-- Servicio 6 -->
+                <div class="bg-slate-900 p-8 rounded-2xl border border-slate-800 hover:border-red-500/50 transition">
+                    <div class="w-12 h-12 bg-red-600/20 rounded-xl flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">Integración Industrial</h4>
+                    <p class="text-slate-400">Conexión de PLCs, SCADA y sistemas OT con tecnologías de información modernas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Metodología -->
+    <section id="metodologia" class="py-20 bg-slate-900">
+        <div class="max-w-6xl mx-auto px-6">
+            <h3 class="text-3xl font-bold text-white text-center mb-12">Nuestra <span class="text-gradient-ia">Metodología</span></h3>
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-blue-600/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl font-bold text-blue-400">1</span>
+                    </div>
+                    <h4 class="text-lg font-bold text-white mb-2">Diagnóstico</h4>
+                    <p class="text-slate-400 text-sm">Analizamos sus procesos y necesidades específicas</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-purple-600/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl font-bold text-purple-400">2</span>
+                    </div>
+                    <h4 class="text-lg font-bold text-white mb-2">Diseño</h4>
+                    <p class="text-slate-400 text-sm">Creamos la arquitectura de IA más adecuada</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-cyan-600/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl font-bold text-cyan-400">3</span>
+                    </div>
+                    <h4 class="text-lg font-bold text-white mb-2">Desarrollo</h4>
+                    <p class="text-slate-400 text-sm">Implementamos soluciones ejecutables</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-green-600/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl font-bold text-green-400">4</span>
+                    </div>
+                    <h4 class="text-lg font-bold text-white mb-2">Soporte</h4>
+                    <p class="text-slate-400 text-sm">Mantenimiento y evolución continua</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario de Solicitud de Servicios -->
+    <section id="solicitud" class="py-20 bg-slate-950">
+        <div class="max-w-3xl mx-auto px-6">
+            <h3 class="text-3xl font-bold text-white text-center mb-4">Solicita nuestros <span class="text-gradient-ia">Servicios</span></h3>
+            <p class="text-slate-400 text-center mb-10">Completa el formulario y te contactaremos en menos de 24 horas hábiles.</p>
+            
+            <form action="https://formspree.io/f/mdklrzab" method="POST" class="bg-slate-900 p-8 rounded-2xl border border-slate-800">
+                <!-- Nombre -->
+                <div class="mb-6">
+                    <label for="nombre" class="block text-white font-semibold mb-2">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" required
+                        class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition"
+                        placeholder="Tu nombre">
+                </div>
+                
+                <!-- Email -->
+                <div class="mb-6">
+                    <label for="email" class="block text-white font-semibold mb-2">Correo electrónico</label>
+                    <input type="email" id="email" name="email" required
+                        class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition"
+                        placeholder="tu@email.com">
+                </div>
+                
+                <!-- Teléfono -->
+                <div class="mb-6">
+                    <label for="telefono" class="block text-white font-semibold mb-2">Teléfono (opcional)</label>
+                    <input type="tel" id="telefono" name="telefono"
+                        class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition"
+                        placeholder="+52 55 1234 5678">
+                </div>
+                
+                <!-- Empresa -->
+                <div class="mb-6">
+                    <label for="empresa" class="block text-white font-semibold mb-2">Empresa (opcional)</label>
+                    <input type="text" id="empresa" name="empresa"
+                        class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition"
+                        placeholder="Nombre de tu empresa">
+                </div>
+                
+                <!-- Servicio de interés -->
+                <div class="mb-6">
+                    <label for="servicio" class="block text-white font-semibold mb-2">Servicio de interés</label>
+                    <select id="servicio" name="servicio" required
+                        class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-xl text-white focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition">
+                        <option value="" class="text-slate-500">Selecciona un servicio</option>
+                        <option value="IA Nativa y Agentic AI">IA Nativa y Agentic AI</option>
+                        <option value="Software Ejecutable (.exe)">Software Ejecutable (.exe)</option>
+                        <option value="Cloud & SaaS">Cloud & SaaS</option>
+                        <option value="Automatización Inteligente">Automatización Inteligente</option>
+                        <option value="Transformación Digital / BI">Transformación Digital / BI</option>
+                        <option value="Integración Industrial">Integración Industrial</option>
+                        <option value="Otro">Otro (especificar en mensaje)</option>
+                    </select>
+                </div>
+                
+                <!-- Mensaje -->
+                <div class="mb-8">
+                    <label for="mensaje" class="block text-white font-semibold mb-2">Describe tu proyecto o necesidad</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required
+                        class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition resize-none"
+                        placeholder="Cuéntanos sobre tu proyecto, desafíos actuales o lo que necesitas resolver..."></textarea>
+                </div>
+                
+                <!-- Botón de envío -->
+                <div class="text-center">
+                    <button type="submit" class="px-12 py-5 gradient-ia text-white font-bold rounded-xl text-xl hover:shadow-xl hover:scale-105 transition shadow-2xl shadow-blue-600/30">
+                        Enviar solicitud de servicios
+                    </button>
+                    <p class="text-slate-500 text-sm mt-4">La información será enviada directamente a <strong>admin@gproatechnology.com</strong></p>
+                    <p class="text-slate-500 text-xs mt-2">Respuesta garantizada en menos de 24 horas hábiles</p>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="py-20 gradient-premium">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h3 class="text-3xl font-bold text-white mb-6">¿Listo para transformar su negocio?</h3>
+            <p class="text-slate-300 text-lg mb-8">Contáctenos hoy y descubra cómo la IA puede impulsar su empresa al siguiente nivel.</p>
+            <a href="solicitud-servicios.html" class="inline-block px-10 py-5 gradient-ia text-white font-bold rounded-xl text-xl hover:shadow-xl hover:scale-105 transition shadow-2xl shadow-blue-600/30">
+                Solicitar Reunión
+            </a>
+            <p class="text-slate-500 text-sm mt-4">Respuesta en menos de 24 horas · Confidencialidad garantizada</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t border-slate-800 py-8">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <div class="flex items-center justify-center gap-3 mb-4">
+                <img src="assets/images/GProA_Logo2.jpeg" alt="GProA Logo" class="h-8">
+                <span class="text-lg font-bold text-white">GProA Technology</span>
+            </div>
+            <p class="text-slate-500 text-sm">IA Nativa. Soluciones Ejecutables. Escalabilidad sin Límites.</p>
+            <p class="text-slate-600 text-xs mt-2">© <span id="currentYear"></span> GProA Technology S. de R.L. de C.V.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
