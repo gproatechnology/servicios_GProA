@@ -1,8 +1,11 @@
-# Partner Brief | GProA Technology
+# GProA Technology · Servicios
+
+[![GitHub Pages](https://img.shields.io/badge/GitHub-Pages-blue?style=for-the-badge)](https://gproatechnology.github.io/servicios_GProA/)
+[![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-green?style=for-the-badge)](https://github.com/GProATechnology/servicios_GProA)
 
 ## Propósito
 
-Este repositorio contiene el Partner Brief de GProA Technology, un documento HTML estático que presenta las capacidades técnicas y el enfoque metodológico de la firma para colaboración con consultores, integradores y equipos técnicos corporativos.
+Este repositorio contiene el sitio web de servicios de GProA Technology, una empresa especializada en IA nativa y soluciones ejecutables. El sitio incluye información sobre servicios, metodología y formularios de contacto.
 
 ## Contenido del Documento
 
@@ -38,9 +41,32 @@ El documento está dirigido a:
 - Integradores técnicos y equipos de desarrollo especializados.
 - Partners tecnológicos que buscan colaboración en proyectos complejos.
 
-## Visualización
+## Visualización en GitHub Pages
 
-El documento es un archivo HTML estático. Para visualizarlo:
+El sitio está publicado en GitHub Pages y puede accederse en:
+
+**https://gproatechnology.github.io/servicios_GProA/**
+
+### Formularios Disponibles
+
+Desde la página principal puede acceder a los siguientes formularios:
+
+1. **Página principal**: [index.html](https://gproatechnology.github.io/servicios_GProA/)
+2. **Solicitud de Servicios**: [solicitud-servicios.html](https://gproatechnology.github.io/servicios_GProA/solicitud-servicios.html)
+3. **Contacto**: [contacto.html](https://gproatechnology.github.io/servicios_GProA/contacto.html)
+
+### Cómo usar los formularios
+
+Al hacer clic en los botones de "Solicitud de Servicios" o "Contacto estratégico" en la página principal, se abrirá una nueva pestaña con el formulario correspondiente donde los usuarios pueden:
+
+- Completar sus datos de empresa
+- Seleccionar los servicios requeridos
+- Describir su proyecto o necesidad
+- Enviar la solicitud directamente por correo electrónico
+
+## Desarrollo Local
+
+Para visualizar el documento localmente:
 
 - Abrir `index.html` directamente en un navegador web.
 - O levantar un servidor local (ver `run.txt` para instrucciones).
@@ -51,7 +77,7 @@ El diseño está optimizado para lectura en pantalla e impresión, con estilos p
 
 Para generar una versión PDF profesional del Partner Brief:
 
-1. Abre `partner-brief-print.html` en tu navegador
+1. Abre `index.html` en tu navegador
 2. Usa "Guardar como PDF" (Ctrl+P / Cmd+P)
 3. Consulta `PDF_GENERATION.md` para métodos alternativos con wkhtmltopdf o Puppeteer
 

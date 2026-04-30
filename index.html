@@ -1,683 +1,384 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GProA Technology | Ingeniería Full-Stack en IA & Automatización Industrial</title>
-    <meta name="description" content="Empresa líder en desarrollo full-stack especializada en IA Generativa, Automatización Industrial 4.0, Robótica, Chatbots y Software Ejecutable para Windows. Soluciones tecnológicas de vanguardia.">
-    <!-- Tailwind CSS via CDN -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>GProA Technology · Carta de Servicios Completa · IA Nativa + Ingeniería Eléctrica NOM-001</title>
+    <!-- Meta tags estratégicos (ampliados) -->
+    <meta name="description" content="GProA Technology: Arquitectura de IA Nativa, Agentic AI, software ejecutable, ingeniería de control eléctrico NOM-001, generador de proyectos eléctricos, mantenimiento predictivo y automatización industrial 4.0. Descargue la carta de servicios completa.">
+    <meta name="keywords" content="IA Nativa, carta de servicios GProA, NOM-001, generador de proyectos eléctricos, PLC integración, automatización industrial, mantenimiento predictivo, gemelo digital eléctrico">
+    <link rel="canonical" href="https://www.gproatechnology.com/">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="GProA Technology - Carta de Servicios Integral · IA Nativa y Soluciones Ejecutables">
+    <meta property="og:description" content="Arquitectura de IA Nativa, software ejecutable, generador de proyectos eléctricos NOM-001, automatización IT/OT, mantenimiento predictivo y roadmaps de innovación.">
+    <meta property="og:image" content="https://www.gproatechnology.com/assets/images/GProA_Logo2.jpeg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#0B1120">
+    <!-- Tailwind + Inter -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Inter Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <!-- Custom Scroll & Animation -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
-        html {
-            scroll-behavior: smooth;
-            font-family: 'Inter', sans-serif;
-        }
-        .gradient-primary {
-            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
-        }
-        .gradient-accent {
-            background: linear-gradient(90deg, #3b82f6 0%, #8b5cf6 50%, #06b6d4 100%);
-        }
-        .text-gradient {
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        .card-hover {
-            transition: all 0.3s ease;
-            border: 1px solid #e2e8f0;
-        }
-        .card-hover:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 40px -12px rgba(15, 23, 42, 0.18);
-            border-color: #cbd5e1;
-        }
-        .stat-bar {
-            transition: width 1.5s ease-in-out;
-        }
-        .project-tag {
-            background: rgba(59, 130, 246, 0.1);
-            color: #3b82f6;
-            padding: 0.25rem 0.75rem;
-            border-radius: 9999px;
-            font-size: 0.75rem;
-            font-weight: 500;
-        }
+        * { font-family: 'Inter', sans-serif; }
+        html { scroll-behavior: smooth; }
+        .gradient-ia { background: linear-gradient(90deg, #2563eb 0%, #7c3aed 60%, #06b6d4 100%); }
+        .text-gradient-ia { background: linear-gradient(135deg, #3b82f6, #8b5cf6, #2dd4bf); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .card-enterprise { transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94); border: 1px solid rgba(255,255,255,0.05); background: rgba(15, 23, 42, 0.8); backdrop-filter: blur(8px); }
+        .card-enterprise:hover { transform: translateY(-8px); border-color: rgba(59,130,246,0.5); box-shadow: 0 25px 40px -12px rgba(0,0,0,0.6); }
+        .glass-tag { background: rgba(59,130,246,0.12); backdrop-filter: blur(4px); border: 1px solid rgba(59,130,246,0.25); color: #bfdbfe; }
+        .stat-bar-premium { transition: width 1.7s ease-out; background: linear-gradient(90deg, #2563eb, #4f46e5); }
+        @keyframes float-global-1 { 0% { transform: translate(0,0) rotate(0deg); } 25% { transform: translate(50px,-40px) rotate(8deg); } 50% { transform: translate(100px,20px) rotate(-5deg); } 75% { transform: translate(50px,-20px) rotate(3deg); } 100% { transform: translate(0,0) rotate(0deg); } }
+        @keyframes float-global-2 { 0% { transform: translate(0,0) rotate(0deg); } 25% { transform: translate(-45px,-30px) rotate(-6deg); } 50% { transform: translate(-90px,35px) rotate(5deg); } 75% { transform: translate(-45px,10px) rotate(-3deg); } 100% { transform: translate(0,0) rotate(0deg); } }
+        .navbar-premium { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+        .navbar-premium.initial { background: transparent; backdrop-filter: blur(0); }
+        .navbar-premium.scrolled { background-color: rgba(15,23,42,0.85) !important; backdrop-filter: blur(12px); box-shadow: 0 4px 30px -10px rgba(0,0,0,0.5); }
+        .nav-link { position: relative; }
+        .nav-link::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px; background: linear-gradient(90deg, #3b82f6, #8b5cf6, #06b6d4); transition: width 0.3s ease; border-radius: 2px; }
+        .nav-link:hover::after, .nav-link.active::after { width: 100%; }
+        .mobile-menu { transition: opacity 0.3s ease, transform 0.3s ease; opacity: 0; transform: translateY(-10px); pointer-events: none; }
+        .mobile-menu.open { opacity: 1; transform: translateY(0); pointer-events: auto; }
+        .hamburger-line { transition: transform 0.3s ease, opacity 0.3s ease; }
+        .hamburger-open .hamburger-line:nth-child(1) { transform: rotate(45deg) translate(5px,5px); }
+        .hamburger-open .hamburger-line:nth-child(2) { opacity: 0; }
+        .hamburger-open .hamburger-line:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px); }
+        input, textarea, select { font-size: 16px; }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-800 antialiased">
+<body class="bg-slate-950 text-slate-200 antialiased selection:bg-blue-500/30 selection:text-white">
+    <!-- Fondo flotante mejorado -->
+    <div class="fixed inset-0 overflow-hidden pointer-events-none z-0">
+        <svg class="absolute text-blue-500/15" width="60" height="60" viewBox="0 0 24 24" fill="currentColor" style="top: 3%; left: -6%; animation: float-global-1 35s linear infinite;"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>
+        <svg class="absolute text-purple-500/15" width="50" height="50" viewBox="0 0 24 24" fill="currentColor" style="top: 12%; right: -4%; animation: float-global-2 30s linear infinite;"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg>
+        <svg class="absolute text-cyan-500/15" width="45" height="45" viewBox="0 0 24 24" fill="currentColor" style="top: 22%; left: 8%; animation: float-global-1 40s linear infinite;"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4z"/></svg>
+    </div>
 
-    <!-- ===== NAVIGATION BAR ===== -->
-    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <!-- Logo -->
-            <div class="flex items-center space-x-3">
-                <img src="assets/images/GProA_Logo2.jpeg" alt="GProA Logo" class="h-12 w-auto rounded-lg object-contain p-1 bg-white border border-slate-200">
-                <div>
-                    <h1 class="text-xl font-bold text-slate-900">GProA Technology</h1>
-                    <p class="text-xs text-slate-500">Ingeniería Full-Stack & IA</p>
+    <!-- NAVBAR (idéntica a la versión original) -->
+    <nav id="mainNav" class="navbar-premium sticky top-0 z-50 initial bg-cover bg-center bg-no-repeat" style="background-image: url('assets/images/PanelazulCartadeServicios (3).png');">
+        <div id="navOverlay" class="absolute inset-0 bg-gradient-to-r from-black/10 via-transparent to-black/10 rounded-b-2xl"></div>
+        <div class="relative z-10 max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="relative w-20 h-20 rounded-full overflow-hidden shadow-[0_0_20px_rgba(59,130,246,0.6)] ring-2 ring-blue-400/60 bg-gradient-to-br from-blue-900/40 to-cyan-900/30 backdrop-blur-sm">
+                    <img src="assets/images/LogoGProAazulCartadeServicios Correcto.png" alt="GProA Logo" class="w-16 h-16 object-contain drop-shadow-[0_0_10px_rgba(255,255,255,0.3)]">
                 </div>
+                <div class="text-shadow-nav hidden md:block"><span class="text-xl font-bold text-white">GProA Technology</span></div>
             </div>
-
-            <!-- Desktop Menu -->
-            <div class="hidden lg:flex items-center space-x-8">
-                <a href="#soluciones" class="text-slate-700 hover:text-blue-600 font-medium transition">Soluciones</a>
-                <a href="#proyectos" class="text-slate-700 hover:text-blue-600 font-medium transition">Proyectos IA</a>
-                <a href="#metricas" class="text-slate-700 hover:text-blue-600 font-medium transition">Métricas</a>
-                <a href="#windows" class="text-slate-700 hover:text-blue-600 font-medium transition">Software Windows</a>
-                <a href="#contacto" class="px-5 py-2 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition">Contacto</a>
+            <div class="hidden lg:flex items-center gap-6">
+                <a href="#filosofia" class="nav-link text-white hover:text-blue-300 font-medium">Filosofía</a>
+                <a href="#ingenieria" class="nav-link text-white hover:text-blue-300 font-medium">Ingeniería NOM-001</a>
+                <a href="#metodologia" class="nav-link text-white hover:text-blue-300 font-medium">Metodología</a>
+                <a href="#seguridad" class="nav-link text-white hover:text-blue-300 font-medium">Seguridad</a>
+                <a href="#roadmap" class="nav-link text-white hover:text-blue-300 font-medium">Roadmap</a>
+                <a href="assets/pdfs/GProA_Carta_Servicios 2026.pdf" download class="nav-link text-white hover:text-blue-300 flex items-center gap-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>PDF</a>
+                <a href="solicitud-servicios.html" target="_blank" class="px-5 py-2 gradient-ia text-white font-semibold rounded-xl shadow-lg">Contacto</a>
             </div>
-
-            <!-- Mobile Menu Button -->
-            <button id="menuBtn" class="lg:hidden p-2">
-                <svg class="w-6 h-6 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                </svg>
-            </button>
+            <button id="menuBtn" class="lg:hidden p-2 rounded-xl border border-white/10 bg-white/5"><div class="w-6 h-5 flex flex-col justify-between"><span class="hamburger-line w-full h-0.5 bg-white rounded-full origin-left"></span><span class="hamburger-line w-full h-0.5 bg-white rounded-full"></span><span class="hamburger-line w-full h-0.5 bg-white rounded-full origin-left"></span></div></button>
         </div>
-
-        <!-- Mobile Menu (Hidden by default) -->
-        <div id="mobileMenu" class="lg:hidden hidden bg-white border-t px-6 py-4 space-y-4">
-            <a href="#soluciones" class="block text-slate-700 hover:text-blue-600 font-medium">Soluciones</a>
-            <a href="#proyectos" class="block text-slate-700 hover:text-blue-600 font-medium">Proyectos IA</a>
-            <a href="#metricas" class="block text-slate-700 hover:text-blue-600 font-medium">Métricas</a>
-            <a href="#windows" class="block text-slate-700 hover:text-blue-600 font-medium">Software Windows</a>
-            <a href="#contacto" class="block px-5 py-2 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 text-center">Contacto</a>
+        <div id="mobileMenu" class="mobile-menu absolute top-full left-0 right-0 lg:hidden bg-slate-900/95 backdrop-blur-md border-t border-white/20 px-6 py-5 space-y-4">
+            <a href="#filosofia" class="block text-white hover:text-blue-300">Filosofía</a>
+            <a href="#ingenieria" class="block text-white hover:text-blue-300">Ingeniería Eléctrica</a>
+            <a href="#metodologia" class="block text-white hover:text-blue-300">Metodología</a>
+            <a href="#seguridad" class="block text-white hover:text-blue-300">Seguridad</a>
+            <a href="#roadmap" class="block text-white hover:text-blue-300">Roadmap</a>
+            <a href="assets/pdfs/GProA_Carta_Servicios 2026.pdf" download class="block px-4 py-2 border border-blue-400/60 text-center rounded-xl">Descargar PDF</a>
+            <a href="solicitud-servicios.html" target="_blank" class="block px-5 py-2 gradient-ia text-center rounded-xl">Contacto</a>
         </div>
     </nav>
 
-    <!-- ===== HERO SECTION ===== -->
-    <header class="gradient-primary text-white overflow-hidden">
-        <div class="max-w-7xl mx-auto px-6 py-24 lg:py-32 relative">
-            <!-- Background Abstract Elements -->
-            <div class="absolute top-10 right-10 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl"></div>
-            <div class="absolute bottom-10 left-10 w-80 h-80 bg-purple-500/10 rounded-full blur-3xl"></div>
+    <!-- Sección de tecnologías y partners -->
+    <section class="relative py-16 overflow-hidden bg-cover bg-top" style="background-image: url('assets/images/Fondo universo.jpg');"><div class="absolute inset-0 bg-slate-950/80"></div><div class="max-w-7xl mx-auto px-6 relative z-10 text-center"><span class="text-xs font-semibold text-white uppercase tracking-widest">Tecnologías & Partners Estratégicos</span><div class="flex flex-wrap justify-center items-center gap-8 mt-6"><img src="assets/images/iconos/icono logo python.png" class="h-10 drop-shadow-lg"><img src="assets/images/iconos/icono logo c++.png" class="h-10"><img src="assets/images/iconos/icono logo js.png" class="h-10"><img src="assets/images/iconos/icono logo chat gpt.png" class="h-10"><img src="assets/images/iconos/icono logo github.png" class="h-10"><img src="assets/images/iconos/autocad.jpg" class="h-10"><img src="assets/images/iconos/icono logo robot.png" class="h-10"></div></div></section>
 
-            <div class="relative z-10">
-                <!-- Badge -->
-                <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
-                    <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
-                    <span class="text-sm font-medium">Líder en IA Industrial & Desarrollo Full-Stack</span>
+    <!-- HERO -->
+    <header class="relative overflow-hidden bg-cover bg-center" style="background-image: url('assets/images/Blue Robotic App Interface.gif');"><div class="absolute inset-0 bg-gradient-to-b from-slate-900/60 to-slate-900/70"></div><div class="max-w-7xl mx-auto px-6 py-28 lg:py-36 relative z-10"><div class="inline-flex items-center gap-2 glass-tag px-5 py-2 rounded-full mb-8"><span class="w-2.5 h-2.5 bg-green-400 rounded-full animate-pulse"></span><span class="text-sm font-medium uppercase">Native AI · NOM-001 · Industria 4.0</span></div><h1 class="text-5xl md:text-7xl font-black leading-tight"><span class="block">GProA Technology:</span><span class="block text-gradient-ia">Arquitectura de IA Nativa</span><span class="block text-slate-300">y Soluciones Ejecutables</span></h1><p class="text-xl text-slate-300 max-w-3xl mt-8">Integramos <strong>IA Generativa, Agentic AI, ingeniería eléctrica normada (NOM-001) y automatización industrial</strong> para construir la espina dorsal tecnológica que impulsa la eficiencia operativa y la ventaja competitiva.</p><div class="flex flex-wrap gap-6 mt-12"><a href="solicitud-servicios.html" target="_blank" class="px-8 py-4 gradient-ia text-white font-bold rounded-xl shadow-2xl shadow-blue-600/30">Programar consultoría estratégica</a><a href="#ingenieria" class="px-8 py-4 bg-slate-800/70 border border-slate-700 font-bold rounded-xl">Explorar capacidades NOM-001</a></div></div></header>
+
+    <!-- ========== FILOSOFÍA Y VISIÓN (Página completa del PDF) ========== -->
+    <section id="filosofia" class="max-w-7xl mx-auto px-6 py-20">
+        <div class="text-center mb-16"><span class="glass-tag px-5 py-2 text-sm font-semibold">· Filosofía GProA ·</span><h2 class="text-4xl font-bold text-white mt-6">Transformación Estructural <span class="text-gradient-ia">e IA Nativa</span></h2><p class="text-slate-400 text-xl max-w-3xl mx-auto mt-4">Rediseñamos procesos ineficientes antes de automatizar. La IA no es un añadido, es el núcleo.</p></div>
+        <div class="grid lg:grid-cols-2 gap-12">
+            <div class="card-enterprise p-8 rounded-3xl"><div class="flex items-center gap-3 mb-5"><span class="text-3xl">📐</span><h3 class="text-2xl font-bold text-white">Value Stream Mapping (VSM)</h3></div><p class="text-slate-300">Identificamos desperdicios (muda), sobrecargas (muri) e irregularidades (mura) utilizando metodología Lean. Simplificamos flujos de aprobación (de 5 a 2 firmas) mediante reglas de negocio automatizadas. Eliminamos silos de información con una capa de datos unificada (Data Fabric).</p><div class="mt-6 grid grid-cols-2 gap-3"><div class="bg-slate-800/60 p-3 rounded-xl"><span class="text-blue-400 font-mono">-35%</span><p class="text-sm">Downtime no planificado</p></div><div class="bg-slate-800/60 p-3 rounded-xl"><span class="text-blue-400">40h → 5min</span><p class="text-sm">Memorias de cálculo</p></div></div></div>
+            <div class="card-enterprise p-8 rounded-3xl"><div class="flex items-center gap-3 mb-5"><span class="text-3xl">⚙️</span><h3 class="text-2xl font-bold text-white">Arquitectura de IA Nativa</h3></div><p class="text-slate-300">La inteligencia artificial no es un “añadido” sino el núcleo del sistema. Cada módulo (desde la captura de datos hasta la toma de decisiones) está diseñado para ser asistido o ejecutado por modelos de IA entrenados en el contexto específico de la empresa, con capacidades de razonamiento y aprendizaje continuo.</p><div class="mt-6 h-1.5 w-full bg-slate-700 rounded-full overflow-hidden"><div class="w-full h-full stat-bar-premium rounded-full"></div></div><p class="text-right text-sm text-slate-400 mt-2">Modelos adaptativos · MLOps nativo</p></div>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8 mt-16">
+            <div class="card-enterprise p-6 rounded-xl"><span class="text-3xl font-black text-blue-500">ROI</span><h3 class="text-xl font-bold text-white mt-2">Ingeniería por Resultados</h3><p class="text-slate-400 text-sm">No facturamos horas sin generar valor. Cada proyecto incluye KPIs contratados: reducción de tiempo de elaboración de 40h a 15 min, disminución de downtime no planificado en un 35%, etc.</p></div>
+            <div class="card-enterprise p-6 rounded-xl"><span class="text-3xl font-black text-purple-500">🧩</span><h3 class="text-xl font-bold text-white mt-2">Entregables Modulares</h3><p class="text-slate-400 text-sm">Sistema construido en bloques independientes (Python, JavaScript/Next.js, C++) que permite validar funcionalidades tempranas y ajustar el rumbo sin afectar lo construido.</p></div>
+            <div class="card-enterprise p-6 rounded-xl"><span class="text-3xl font-black text-cyan-500">🔒</span><h3 class="text-xl font-bold text-white mt-2">Transferencia Tecnológica</h3><p class="text-slate-400 text-sm">Todo el código fuente, diagramas de PLC y documentación se entregan en repositorios privados del cliente con licencia MIT, garantizando independencia y no dependencia.</p></div>
+        </div>
+    </section>
+
+    <!-- ========== AUTOMATIZACIÓN ESTRATÉGICA IT/OT (Tablas completas del PDF) ========== -->
+    <section class="max-w-7xl mx-auto px-6 py-20 bg-slate-900/40 rounded-3xl">
+        <h3 class="text-3xl font-bold text-white text-center mb-10">Automatización Estratégica de Procesos Críticos <span class="text-gradient-ia">(IT/OT)</span></h3>
+        <div class="overflow-x-auto">
+            <table class="w-full text-left border-collapse">
+                <thead class="bg-slate-800/80"><tr><th class="p-4 text-blue-300">Tipo de automatización</th><th class="p-4 text-blue-300">Herramientas</th><th class="p-4 text-blue-300">Entregable típico</th></tr></thead>
+                <tbody class="divide-y divide-slate-700">
+                    <tr><td class="p-4">Flujos de documentos</td><td class="p-4">n8n, Make, Zapier, Power Automate</td><td class="p-4">PDF recibido por correo → extracción, clasificación, guardado en SharePoint + SQL</td></tr>
+                    <tr><td class="p-4">Cálculos de ingeniería</td><td class="p-4">Python con Pandas, NumPy, SymPy</td><td class="p-4">Memorias de cálculo eléctricas (200 páginas generadas en 5 min)</td></tr>
+                    <tr><td class="p-4">Integración PLC - Nube</td><td class="p-4">MQTT, OPC UA, Node-RED, C++ SDKs</td><td class="p-4">Datos de temperatura y vibración de motor enviados cada segundo a Azure</td></tr>
+                    <tr><td class="p-4">Reportes regulatorios</td><td class="p-4">ReportLab, JasperReports, Crystal Reports</td><td class="p-4">Generación automática de dictámenes de verificación eléctrica conforme a NOM-001</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="mt-8 bg-slate-800/70 p-6 rounded-2xl"><p class="text-cyan-300"><strong>Beneficio cuantificable:</strong> En un proyecto de maquiladora automotriz, integramos 45 PLCs (Rockwell y Siemens) a un solo sistema de supervisión central, reduciendo el tiempo de respuesta ante fallas de 25 minutos a 3 minutos, y eliminando 15 horas semanales de captura manual.</p></div>
+    </section>
+
+    <!-- ========== DESARROLLO FULL STACK (tabla) ========== -->
+    <section class="max-w-7xl mx-auto px-6 py-20">
+        <h3 class="text-3xl font-bold text-white text-center mb-10">Desarrollo <span class="text-gradient-ia">Full Stack Empresarial</span></h3>
+        <div class="overflow-x-auto"><table class="w-full text-left border-collapse"><thead class="bg-slate-800/80"><tr><th class="p-4">Componente</th><th class="p-4">Tecnologías</th><th class="p-4">Características críticas</th></tr></thead><tbody><tr><td class="p-4">Frontend Web</td><td class="p-4">Next.js 14, React 18, Tailwind CSS</td><td class="p-4">Accesibilidad WCAG 2.1, PWA, modo offline</td></tr><tr><td class="p-4">Backend</td><td class="p-4">Python (FastAPI, Django), Node.js</td><td class="p-4">APIs &lt;100 ms, documentación Swagger, rate limiting</td></tr><tr><td class="p-4">Bases de datos</td><td class="p-4">PostgreSQL (TimescaleDB), MongoDB, InfluxDB</td><td class="p-4">Históricos de PLC por 10 años sin pérdida de resolución</td></tr><tr><td class="p-4">Móvil</td><td class="p-4">React Native, Flutter</td><td class="p-4">Escaneo QR, geolocalización, sincronización offline</td></tr></tbody></table></div>
+        <div class="mt-8 text-center glass-tag inline-block px-6 py-3 rounded-full mx-auto">Entorno de desarrollo: Cursor + Copilot + Sonnet 3.5 → productividad x5, tasa de bugs inicial un 40% menor.</div>
+    </section>
+
+    <!-- ========== INGENIERÍA DE CONTROL ELÉCTRICO (ESPECIALIDAD) ========== -->
+    <section id="ingenieria" class="max-w-7xl mx-auto px-6 py-20 border-t border-blue-500/30">
+        <div class="text-center mb-16"><span class="glass-tag px-6 py-2 text-sm font-semibold rounded-full">· INGENIERÍA DE CONTROL · INDUSTRIA 4.0 ·</span><h2 class="text-4xl md:text-5xl font-bold text-white mt-6">Especialidad en Automatización de Maquinaria y Procesos</h2><p class="text-slate-400 text-xl max-w-3xl mx-auto mt-4">Ciclo completo de automatización: levantamiento, diseño, selección de hardware, programación, simulación, pruebas SAT/FAT y documentación as-built.</p></div>
+<div class="grid md:grid-cols-3 gap-6 mb-16">
+            <!-- Paso 1: Levantamiento en campo -->
+            <div class="group relative bg-gradient-to-br from-slate-800/80 to-slate-900/90 p-6 rounded-2xl border border-slate-600/30 hover:border-blue-500/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(59,130,246,0.2)] hover:-translate-y-1">
+                <div class="absolute top-0 right-0 w-16 h-16 bg-gradient-to-br from-blue-600/20 to-transparent rounded-br-2xl rounded-tl-2xl"></div>
+                <div class="relative z-10">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center shadow-lg shadow-blue-500/30 mb-4">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/></svg>
+                    </div>
+                    <span class="text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">1</span>
+                    <h4 class="text-xl font-bold text-white mt-2 group-hover:text-blue-300 transition">Levantamiento en campo</h4>
+                    <p class="text-slate-400 text-sm mt-2">Inventario I/O, diagramas P&ID, identificación de motores, sensores, condiciones ambientales.</p>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="px-2 py-1 text-xs rounded-full bg-blue-500/20 text-blue-300 border border-blue-500/30">P&ID</span>
+                        <span class="px-2 py-1 text-xs rounded-full bg-blue-500/20 text-blue-300 border border-blue-500/30">I/O</span>
+                    </div>
                 </div>
+            </div>
 
-                <!-- Main Headline -->
-                <h1 class="text-4xl md:text-6xl lg:text-7xl font-black leading-tight mb-6">
-                    <span class="block">Transformamos</span>
-                    <span class="block text-gradient">Procesos Industriales</span>
-                    <span class="block">con <span class="underline decoration-blue-400">IA Generativa</span></span>
-                </h1>
-
-                <!-- Description -->
-                <p class="text-xl text-slate-300 max-w-3xl mb-10 leading-relaxed">
-                    Somos la empresa mexicana especializada en el desarrollo de <strong>soluciones full-stack de vanguardia</strong>, integrando Inteligencia Artificial Generativa, Automatización Industrial 4.0, Robótica y nuestros <strong>exclusivos programas ejecutables para Windows</strong> en sistemas que aprenden, optimizan y evolucionan.
-                </p>
-
-                <!-- CTA Buttons -->
-                <div class="flex flex-wrap gap-4">
-                    <a href="#proyectos" class="px-8 py-4 gradient-accent text-white font-bold rounded-lg hover:shadow-xl hover:shadow-blue-500/25 transition-all duration-300 flex items-center gap-3">
-                        Explorar Proyectos IA
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 13l-5 5m0 0l-5-5m5 5V6"/>
-                        </svg>
-                    </a>
-                    <a href="#contacto" class="px-8 py-4 bg-white text-slate-900 font-bold rounded-lg hover:bg-slate-100 transition border border-slate-300">
-                        Contactar Expertos
-                    </a>
+            <!-- Paso 2: Diseño de estrategia de control -->
+            <div class="group relative bg-gradient-to-br from-slate-800/80 to-slate-900/90 p-6 rounded-2xl border border-slate-600/30 hover:border-purple-500/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(168,85,247,0.2)] hover:-translate-y-1">
+                <div class="absolute top-0 right-0 w-16 h-16 bg-gradient-to-br from-purple-600/20 to-transparent rounded-br-2xl rounded-tl-2xl"></div>
+                <div class="relative z-10">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center shadow-lg shadow-purple-500/30 mb-4">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.773 1.067c1.543.94 3.31.804 4.633.504a1.724 1.724 0 001.301-.76c.319-.607.298-1.363.027-1.977a1.724 1.724 0 00-.686-1.03c-.729-.384-1.567-.33-2.286.155-.71.472-1.248 1.243-1.447 1.993l-.692 2.764-1.342.001z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                    </div>
+                    <span class="text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">2</span>
+                    <h4 class="text-xl font-bold text-white mt-2 group-hover:text-purple-300 transition">Diseño de estrategia</h4>
+                    <p class="text-slate-400 text-sm mt-2">Modos manual/automático, lógica de seguridad ISO 13849, interlocks, gestión de alarmas.</p>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="px-2 py-1 text-xs rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/30">ISO 13849</span>
+                        <span class="px-2 py-1 text-xs rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/30">Interlock</span>
+                    </div>
                 </div>
+            </div>
 
-                <!-- Tech Stack Pill -->
-                <div class="mt-16 flex flex-wrap items-center gap-4 text-sm">
-                    <span class="text-slate-400">Tecnologías Principales:</span>
-                    <div class="flex flex-wrap gap-3">
-                        <span class="px-4 py-2 bg-white/10 rounded-full backdrop-blur-sm">Next.js & React</span>
-                        <span class="px-4 py-2 bg-white/10 rounded-full backdrop-blur-sm">Tailwind CSS</span>
-                        <span class="px-4 py-2 bg-white/10 rounded-full backdrop-blur-sm">Python & TensorFlow</span>
-                        <span class="px-4 py-2 bg-white/10 rounded-full backdrop-blur-sm">.NET para Windows</span>
-                        <span class="px-4 py-2 bg-white/10 rounded-full backdrop-blur-sm">PLC & SCADA</span>
+            <!-- Paso 3: Selección de hardware -->
+            <div class="group relative bg-gradient-to-br from-slate-800/80 to-slate-900/90 p-6 rounded-2xl border border-slate-600/30 hover:border-cyan-500/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(6,182,212,0.2)] hover:-translate-y-1">
+                <div class="absolute top-0 right-0 w-16 h-16 bg-gradient-to-br from-cyan-600/20 to-transparent rounded-br-2xl rounded-tl-2xl"></div>
+                <div class="relative z-10">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-cyan-500 to-teal-500 flex items-center justify-center shadow-lg shadow-cyan-500/30 mb-4">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/></svg>
+                    </div>
+                    <span class="text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-teal-400">3</span>
+                    <h4 class="text-xl font-bold text-white mt-2 group-hover:text-cyan-300 transition">Selección de hardware</h4>
+                    <p class="text-slate-400 text-sm mt-2">Cálculo de racks PLC, módulos I/O, fuentes, protecciones, gabinetes.</p>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="px-2 py-1 text-xs rounded-full bg-cyan-500/20 text-cyan-300 border border-cyan-500/30">PLC</span>
+                        <span class="px-2 py-1 text-xs rounded-full bg-cyan-500/20 text-cyan-300 border border-cyan-500/30">I/O</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Paso 4: Programación nativa -->
+            <div class="group relative bg-gradient-to-br from-slate-800/80 to-slate-900/90 p-6 rounded-2xl border border-slate-600/30 hover:border-green-500/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(34,197,94,0.2)] hover:-translate-y-1">
+                <div class="absolute top-0 right-0 w-16 h-16 bg-gradient-to-br from-green-600/20 to-transparent rounded-br-2xl rounded-tl-2xl"></div>
+                <div class="relative z-10">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-green-500 to-emerald-500 flex items-center justify-center shadow-lg shadow-green-500/30 mb-4">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+                    </div>
+                    <span class="text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-400">4</span>
+                    <h4 class="text-xl font-bold text-white mt-2 group-hover:text-green-300 transition">Programación nativa</h4>
+                    <p class="text-slate-400 text-sm mt-2">Entornos TIA Portal, Studio 5000, Codesys, TwinCAT, incluyendo PID, comunicación industrial.</p>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="px-2 py-1 text-xs rounded-full bg-green-500/20 text-green-300 border border-green-500/30">TIA Portal</span>
+                        <span class="px-2 py-1 text-xs rounded-full bg-green-500/20 text-green-300 border border-green-500/30">PID</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Paso 5: Simulación offline -->
+            <div class="group relative bg-gradient-to-br from-slate-800/80 to-slate-900/90 p-6 rounded-2xl border border-slate-600/30 hover:border-amber-500/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(245,158,11,0.2)] hover:-translate-y-1">
+                <div class="absolute top-0 right-0 w-16 h-16 bg-gradient-to-br from-amber-600/20 to-transparent rounded-br-2xl rounded-tl-2xl"></div>
+                <div class="relative z-10">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-amber-500 to-orange-500 flex items-center justify-center shadow-lg shadow-amber-500/30 mb-4">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/><path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <span class="text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-orange-400">5</span>
+                    <h4 class="text-xl font-bold text-white mt-2 group-hover:text-amber-300 transition">Simulación offline</h4>
+                    <p class="text-slate-400 text-sm mt-2">PLCSim, FactoryTalk Logix Echo, pruebas de interlockings y condiciones límite.</p>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="px-2 py-1 text-xs rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30">PLCSim</span>
+                        <span class="px-2 py-1 text-xs rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30">Testing</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Paso 6-7: SAT/FAT + Documentación -->
+            <div class="group relative bg-gradient-to-br from-slate-800/80 to-slate-900/90 p-6 rounded-2xl border border-slate-600/30 hover:border-red-500/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(239,68,68,0.2)] hover:-translate-y-1">
+                <div class="absolute top-0 right-0 w-16 h-16 bg-gradient-to-br from-red-600/20 to-transparent rounded-br-2xl rounded-tl-2xl"></div>
+                <div class="relative z-10">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-red-500 to-rose-500 flex items-center justify-center shadow-lg shadow-red-500/30 mb-4">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <span class="text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-rose-400">6-7</span>
+                    <h4 class="text-xl font-bold text-white mt-2 group-hover:text-red-300 transition">SAT/FAT + Documentación</h4>
+                    <p class="text-slate-400 text-sm mt-2">Pruebas de carga, ajuste PID, planos CAD actualizados, manuales, respaldo de código.</p>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="px-2 py-1 text-xs rounded-full bg-red-500/20 text-red-300 border border-red-500/30">SAT/FAT</span>
+                        <span class="px-2 py-1 text-xs rounded-full bg-red-500/20 text-red-300 border border-red-500/30">CAD</span>
                     </div>
                 </div>
             </div>
         </div>
-    </header>
+        <div class="bg-slate-800/70 p-8 rounded-3xl border border-cyan-500/30"><div class="flex flex-wrap gap-6 justify-between items-center"><div><span class="text-cyan-300 font-bold">PLC que dominamos (integración multi-marca):</span><div class="flex flex-wrap gap-4 mt-3"><span class="glass-tag px-4 py-2">Rockwell ControlLogix/CompactLogix</span><span class="glass-tag px-4 py-2">Siemens S7-1200/1500</span><span class="glass-tag px-4 py-2">Schneider Modicon M580</span><span class="glass-tag px-4 py-2">Mitsubishi iQ-R/iQ-F</span><span class="glass-tag px-4 py-2">WAGO PFC200</span><span class="glass-tag px-4 py-2">Beckhoff TwinCAT</span><span class="glass-tag px-4 py-2">ABB AC500</span><span class="glass-tag px-4 py-2">Omron NJ/NX</span></div></div><div class="text-cyan-200 mt-3">+ Integración heterogénea vía OPC UA / MQTT, respetando la inversión previa del cliente.</div></div></div>
+    </section>
 
-    <!-- ===== WHAT WE DO / SOLUTIONS ===== -->
-    <section id="soluciones" class="max-w-7xl mx-auto px-6 py-24">
-        <div class="text-center mb-16">
-            <h2 class="text-4xl md:text-5xl font-bold text-slate-900 mb-4">Desarrollo Full-Stack <span class="text-gradient">Especializado</span></h2>
-            <p class="text-xl text-slate-600 max-w-3xl mx-auto">
-                Combinamos expertise de frontend, backend, IA y automatización industrial para construir sistemas integrales y escalables.
+    <!-- ========== GENERADOR DE PROYECTOS ELÉCTRICOS (NOM-001) ========== -->
+    <section class="max-w-7xl mx-auto px-6 py-20 bg-slate-900/40 rounded-3xl">
+        <div class="grid lg:grid-cols-3 gap-8 items-center">
+            <div class="lg:col-span-2"><span class="glass-tag px-4 py-1 text-sm">Software Propietario GProA</span><h2 class="text-3xl font-bold text-white mt-4">Generador de Proyectos Eléctricos <span class="text-gradient-ia">Cumple NOM-001–SEDE 2018</span></h2><p class="text-slate-300 mt-4">Motor Python con PySpice + motor de reglas basado en los 680 artículos de la NOM-001 (incluye tablas de ampacidad, factores de corrección, puesta a tierra, protección contra sobrecorriente). Entrada wizard → salida en <strong>menos de 5 minutos</strong> con precisión del 99.5%.</p><div class="grid md:grid-cols-2 gap-4 mt-6"><ul class="space-y-2"><li class="flex gap-2"><span class="text-green-400">✓</span> Memoria de cálculo eléctrica (PDF 80-120 págs)</li><li class="flex gap-2"><span class="text-green-400">✓</span> Diagrama unifilar DWG/PDF (NOM-001, IEC 60617)</li><li class="flex gap-2"><span class="text-green-400">✓</span> Estudio de arco eléctrico NFPA 70E / IEEE 1584</li></ul><ul class="space-y-2"><li class="flex gap-2"><span class="text-green-400">✓</span> Estudio de puesta a tierra IEEE Std 80</li><li class="flex gap-2"><span class="text-green-400">✓</span> BOM materiales con precios actualizados (Excel, CSV)</li><li class="flex gap-2"><span class="text-green-400">✓</span> Cumplimiento NOM-029-ENER, NOM-017-STPS, IEC 61439</li></ul></div></div>
+            <div class="card-enterprise p-8 rounded-3xl text-center"><span class="text-6xl font-black text-blue-500">5</span><span class="text-white text-xl"> minutos</span><p class="text-slate-400 mt-2">vs 3-6 semanas tradicionales</p><div class="w-20 h-20 mx-auto mt-4 rounded-full bg-gradient-ia animate-pulse"></div><p class="mt-4 text-slate-300 text-sm">Validado por peritos eléctricos independientes (50 proyectos benchmark).</p></div>
+        </div>
+    </section>
+
+    <!-- ========== POWER MONITORING, MANTENIMIENTO PREDICTIVO, GEMELO DIGITAL ========== -->
+    <section class="max-w-7xl mx-auto px-6 py-20">
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="card-enterprise p-6 rounded-2xl"><span class="text-3xl">📈</span><h4 class="text-xl font-bold mt-2">Power Monitoring en tiempo real</h4><p class="text-slate-400 text-sm">Medidores inteligentes (Schneider PM8000, Siemens PAC4200) + dashboard React con alertas por factor de potencia, THD (hasta 31ª armónica). Muestreo configurable: 1/min → 10 muestras/seg.</p></div>
+            <div class="card-enterprise p-6 rounded-2xl"><span class="text-3xl">🔮</span><h4 class="text-xl font-bold mt-2">Mantenimiento Predictivo (AI)</h4><p class="text-slate-400 text-sm">Algoritmos Isolation Forest + Autoencoder LSTM detectan fallas en rodamientos, desbalanceo, degradación. Alertas con <strong>72 horas de anticipación</strong>. Reducción del 45% en downtime. ROI promedio: 6 meses.</p></div>
+            <div class="card-enterprise p-6 rounded-2xl"><span class="text-3xl">🏭</span><h4 class="text-xl font-bold mt-2">Gemelo Digital Eléctrico</h4><p class="text-slate-400 text-sm">Modelo unifilar 3D (Unity/Three.js) con simulación what-if: apertura de interruptores, modificación de cargas, cálculo instantáneo de arco eléctrico y caída de tensión. Integración con PLC en tiempo real vía OPC UA.</p></div>
+        </div>
+    </section>
+
+    <!-- ========== NORMATIVAS Y SERVICIOS DE MANTENIMIENTO ========== -->
+    <section class="max-w-7xl mx-auto px-6 py-20 bg-slate-900/40 rounded-3xl">
+        <h3 class="text-2xl font-bold text-white text-center mb-8">Cumplimiento normativo y servicios de mantenimiento especializado</h3>
+        <div class="grid md:grid-cols-4 gap-4 mb-8">
+            <div class="glass-tag p-4 text-center"><span class="font-bold">NOM-029-ENER</span><br>Motores IE3 Premium</div>
+            <div class="glass-tag p-4 text-center"><span class="font-bold">NFPA 70E</span><br>Arc Flash, PPE, etiquetado</div>
+            <div class="glass-tag p-4 text-center"><span class="font-bold">ISO 50001</span><br>Sistemas de gestión energética</div>
+            <div class="glass-tag p-4 text-center"><span class="font-bold">IEC 61439</span><br>Verificación de tableros BT</div>
+        </div>
+        <div class="flex flex-wrap gap-3 justify-center"><span class="glass-tag px-4 py-2">Termografía infrarroja</span><span class="glass-tag px-4 py-2">Análisis de calidad de energía (Fluke 435)</span><span class="glass-tag px-4 py-2">Prueba de resistividad de tierra (Wenner)</span><span class="glass-tag px-4 py-2">Calibración de protecciones (inyección primaria/secundaria)</span><span class="glass-tag px-4 py-2">Puesta en marcha de motores y variadores</span></div>
+    </section>
+
+    <!-- ========== METODOLOGÍA DE IMPLEMENTACIÓN (FASES 0-5) ========== -->
+    <section id="metodologia" class="max-w-7xl mx-auto px-6 py-20">
+        <h2 class="text-4xl font-bold text-white text-center mb-16">Metodología de Implementación: <span class="text-gradient-ia">Del Diagnóstico al Escalamiento Continuo</span></h2>
+        <div class="grid lg:grid-cols-5 gap-4">
+            <div class="bg-slate-800 p-5 rounded-xl text-center"><div class="text-3xl font-black text-blue-400">0</div><p class="font-bold">Calificación</p><p class="text-xs text-slate-400">1 semana · NDA + cuestionario técnico</p></div>
+            <div class="bg-slate-800 p-5 rounded-xl text-center"><div class="text-3xl font-black text-blue-400">1</div><p class="font-bold">Diagnóstico Estratégico</p><p class="text-xs text-slate-400">2-3 semanas · VSM · Quick Wins</p></div>
+            <div class="bg-slate-800 p-5 rounded-xl text-center"><div class="text-3xl font-black text-blue-400">2</div><p class="font-bold">Diseño Arquitectónico</p><p class="text-xs text-slate-400">3-4 semanas · Arquitectura + PoC</p></div>
+            <div class="bg-slate-800 p-5 rounded-xl text-center"><div class="text-3xl font-black text-blue-400">3</div><p class="font-bold">Desarrollo e Integración</p><p class="text-xs text-slate-400">6-12 semanas · Sprints 2 semanas · CI/CD · SAT/FAT</p></div>
+            <div class="bg-slate-800 p-5 rounded-xl text-center"><div class="text-3xl font-black text-blue-400">4-5</div><p class="font-bold">Ramp-up + Evolución</p><p class="text-xs text-slate-400">Hipercuidado · SLA 99.5% · monitoreo proactivo</p></div>
+        </div>
+        <div class="mt-12 bg-gradient-to-r from-blue-900/40 to-purple-900/40 p-8 rounded-2xl text-center"><p class="text-white text-lg"><strong>Transferencia tecnológica asegurada (No lock-in):</strong> Todo el código fuente, diagramas de PLC y documentación se entregan en repositorios privados del cliente (licencia MIT). Capacitamos a ingenieros del cliente para que mantengan y escalen el sistema sin dependencia.</p></div>
+    </section>
+
+    <!-- ========== SEGURIDAD, ÉTICA Y GOBERNANZA DE IA ========== -->
+    <section id="seguridad" class="max-w-7xl mx-auto px-6 py-20 bg-slate-900/40 rounded-3xl">
+        <div class="text-center mb-12"><h2 class="text-4xl font-bold text-white">Seguridad, Ética y <span class="text-gradient-ia">Gobernanza de IA</span></h2><p class="text-slate-400 text-xl max-w-3xl mx-auto mt-4">Cumplimiento normativo y principios de IA responsable.</p></div>
+        <div class="grid lg:grid-cols-3 gap-8">
+            <div class="card-enterprise p-6"><div class="flex items-center gap-3 text-blue-400 text-2xl">🔒</div><h3 class="text-xl font-bold mt-2">Soberanía de datos</h3><p class="text-slate-400 text-sm">Anonimización, despliegue on-premise (Llama 3, DeepSeek), cifrado AES-256-GCM, VPN site-to-site con IPSec, Zero Trust.</p></div>
+            <div class="card-enterprise p-6"><div class="flex items-center gap-3 text-purple-400 text-2xl">⚖️</div><h3 class="text-xl font-bold mt-2">Mitigación de alucinaciones (RAG)</h3><p class="text-slate-400 text-sm">La IA responde solo con base en su knowledge base corporativa. Auditoría de logs de inferencia almacenados por 7 años.</p></div>
+            <div class="card-enterprise p-6"><div class="flex items-center gap-3 text-cyan-400 text-2xl">👥</div><h3 class="text-xl font-bold mt-2">Human‑in‑the‑loop</h3><p class="text-slate-400 text-sm">Decisiones críticas (energizar líneas, desactivar sistemas de seguridad) requieren autorización manual con doble factor. IA solo sugiere.</p></div>
+            <div class="card-enterprise p-6"><div class="flex items-center gap-3 text-green-400 text-2xl">📋</div><h3 class="text-xl font-bold mt-2">Auditoría de sesgos</h3><p class="text-slate-400 text-sm">Auditorías semestrales con AIF360. Derecho a explicación (XAI) con SHAP values y cadena de razonamiento.</p></div>
+            <div class="card-enterprise p-6"><div class="flex items-center gap-3 text-amber-400 text-2xl">🔍</div><h3 class="text-xl font-bold mt-2">Trazabilidad XAI</h3><p class="text-slate-400 text-sm">Cadenas de pensamiento, atribución de fuentes, registro inmutable en blockchain privado (Hyperledger Besu).</p></div>
+            <div class="card-enterprise p-6"><div class="flex items-center gap-3 text-red-400 text-2xl">✅</div><h3 class="text-xl font-bold mt-2">Cumplimiento normativo</h3><p class="text-slate-400 text-sm">Preparación para regulaciones globales de IA, ISO 27001 en proceso, NOM-151 para firma electrónica.</p></div>
+        </div>
+    </section>
+
+    <!-- ========== ROADMAP DE INNOVACIÓN CONTINUA 2026-2028 ========== -->
+    <section id="roadmap" class="max-w-7xl mx-auto px-6 py-20">
+        <div class="text-center mb-16"><h2 class="text-4xl font-bold text-white">Roadmap de <span class="text-gradient-ia">Innovación Continua</span></h2><p class="text-slate-400 text-xl max-w-3xl mx-auto mt-4">Del software estático al ecosistema evolutivo.</p></div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="card-enterprise p-6 rounded-xl"><span class="text-3xl font-black text-cyan-400">2026 Q1-Q2</span><p class="mt-2">Modelos IA con ventana de 1M tokens (Claude 4, Gemini 1.5 Ultra), generación automática de gemelos digitales desde diagramas unifilares (DWG a 3D).</p></div>
+            <div class="card-enterprise p-6 rounded-xl"><span class="text-3xl font-black text-purple-400">2026 Q3-Q4</span><p class="mt-2">Agentes multimodales que leen manuales PDF, diagramas CAD, P&ID y voz de operador. Integración con HoloLens 3 para asistencia remota.</p></div>
+            <div class="card-enterprise p-6 rounded-xl"><span class="text-3xl font-black text-blue-400">2027</span><p class="mt-2">Ejecución de LLM en PLC de última generación (Siemens S7-1500 AI module, Rockwell CompactLogix 5480). Estándar OPC UA sobre TSN.</p></div>
+            <div class="card-enterprise p-6 rounded-xl"><span class="text-3xl font-black text-green-400">2028</span><p class="mt-2">Sistemas completamente autónomos “lights out” con supervisión humana remota. Garantía de rendimiento 99.99% con penalizaciones.</p></div>
+        </div>
+    </section>
+
+    <!-- ========== CASOS DE ÉXITO (original ampliado) ========== -->
+    <section class="bg-slate-900 py-28 border-y border-slate-800">
+        <div class="max-w-7xl mx-auto px-6"><div class="text-center mb-16"><h2 class="text-4xl font-bold text-white">Innovación <span class="text-gradient-ia">Aplicada</span></h2><p class="text-slate-400 text-xl">Casos de éxito con métricas reales.</p></div>
+        <div class="grid lg:grid-cols-3 gap-8">
+            <div class="card-enterprise p-8 rounded-2xl"><h3 class="text-2xl font-bold">GECRAI</h3><p class="text-slate-300 mt-2">Generador de Cálculos Regulatorios con IA. Software ejecutable que automatiza memorias de cálculo eléctrico NOM-001. Reducción del 82% del tiempo de elaboración (de 40h a 5 min).</p><div class="mt-4 flex gap-2"><span class="glass-tag">.exe nativo</span><span class="glass-tag">Offline-first</span></div></div>
+            <div class="card-enterprise p-8 rounded-2xl"><h3 class="text-2xl font-bold">Sistema Búfalos 2.0</h3><p class="text-slate-300 mt-2">ERP/CRM híbrido para gimnasios: ejecutable en recepción (control de acceso offline) + nube con IA predictiva de abandono. Incremento del 25% en retención de clientes.</p><div class="mt-4"><span class="glass-tag">Hybrid · Predictive AI</span></div></div>
+            <div class="card-enterprise p-8 rounded-2xl"><h3 class="text-2xl font-bold">GlucAI 1.5</h3><p class="text-slate-300 mt-2">Plataforma cloud con deep learning para monitoreo predictivo de diabetes. Integración con wearables, alertas tempranas al círculo de cuidado. Reduce ingresos de emergencia en un 34%.</p><div class="mt-4"><span class="glass-tag">HIPAA-ready</span><span class="glass-tag ml-2">Wearables</span></div></div>
+        </div></div>
+    </section>
+
+    <!-- ========== EQUIPO DE LIDERAZGO ========== -->
+    <section class="max-w-7xl mx-auto px-6 py-20">
+        <div class="text-center"><h2 class="text-4xl font-bold text-white">Equipo de <span class="text-gradient-ia">Liderazgo Tecnológico</span></h2><p class="text-slate-400 text-xl mt-4">Dos ingenieros con una visión: construir la infraestructura de IA más robusta.</p></div>
+        <div class="grid md:grid-cols-2 gap-10 mt-16">
+            <div class="bg-slate-800/50 p-8 rounded-2xl flex flex-col md:flex-row gap-6 items-center"><img src="assets/images/icono imagen lugo trejo.png" class="w-32 h-32 rounded-full border-4 border-blue-500"><div><h3 class="text-2xl font-bold">Juan Abdel Lugo Trejo</h3><p class="text-blue-400">CEO & Arquitecto de Soluciones IA</p><p class="text-slate-400 mt-2">Ingeniero full‑stack con especialización en IA y sistemas embebidos. Lidera arquitectura nativa, agentes autónomos y ejecutables de alto rendimiento.</p></div></div>
+            <div class="bg-slate-800/50 p-8 rounded-2xl flex flex-col md:flex-row gap-6 items-center"><img src="assets/images/logo icono Israel Aldair Resendiz G..jpeg" class="w-32 h-32 rounded-full border-4 border-purple-500"><div><h3 class="text-2xl font-bold">Israel Aldair Reséndiz Gálvez</h3><p class="text-purple-400">COO & Estratega de Operaciones</p><p class="text-slate-400 mt-2">Experto en administración de proyectos tecnológicos y transformación digital. Gestiona la ejecución impecable y la alineación estratégica con los objetivos de negocio.</p></div></div>
+        </div>
+    </section>
+
+    <!-- ========== CARTA DE SERVICIOS PDF DESCARGABLE ========== -->
+    <section class="max-w-7xl mx-auto px-6 py-20"><div class="bg-gradient-to-r from-slate-800/90 to-slate-900 rounded-3xl p-12 border border-blue-500/30 flex flex-col lg:flex-row justify-between items-center gap-12"><div><h2 class="text-4xl font-bold text-white">Carta de Servicios <span class="text-gradient-ia">GProA Technology</span></h2><p class="text-slate-300 text-lg mt-4">Descargue el portafolio completo con todas las capacidades de ingeniería eléctrica, IA nativa, casos de éxito y el detalle de nuestros pilares tecnológicos. Más de 16 páginas de contenido estratégico.</p></div><a href="assets/pdfs/GProA_Carta_Servicios 2026.pdf" download class="group flex flex-col items-center justify-center w-64 h-72 bg-slate-800 border-2 border-dashed border-blue-500/50 rounded-3xl hover:bg-slate-800/80 transition"><svg class="w-16 h-16 text-blue-500" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"/></svg><span class="text-xl font-bold text-white mt-2">GProA_Services.pdf</span><span class="text-blue-400 group-hover:underline mt-1">Descargar ahora</span><span class="text-xs text-slate-500 mt-2">Versión 2.0 · 16 páginas</span></a></div></section>
+
+    <!-- ========== CONTACTO ESTRATÉGICO ========== -->
+    <section class="max-w-7xl mx-auto px-6 py-20">
+        <div class="grid lg:grid-cols-2 gap-16"><div><h2 class="text-4xl font-bold text-white">Inicie su <span class="text-gradient-ia">transformación</span> con una conversación</h2><p class="text-slate-300 text-lg mt-6">Nuestro equipo directivo atiende personalmente cada proyecto estratégico. Contáctenos para una sesión de diagnóstico sin compromiso.</p><div class="mt-10 space-y-6"><div class="flex items-center gap-5"><div class="w-12 h-12 rounded-xl bg-blue-600/20 flex items-center justify-center text-blue-400">📍</div><div><span class="block text-white font-semibold">Centro de operaciones</span><span class="text-slate-400">Calle Libramiento Norte #30, San José Iturbide, Gto. C.P. 37980, México</span></div></div><div class="flex items-center gap-5"><div class="w-12 h-12 rounded-xl bg-purple-600/20 flex items-center justify-center text-purple-400">✉️</div><div><span class="block text-white font-semibold">Correo ejecutivo</span><a href="mailto:trejulu@gproatechnology.com" class="text-blue-400 hover:underline">trejulu@gproatechnology.com</a> (CEO)<br><a href="mailto:admin@gproatechnology.com" class="text-blue-400 hover:underline">admin@gproatechnology.com</a> (COO)</div></div><div class="flex items-center gap-5"><div class="w-12 h-12 rounded-xl bg-green-600/20 flex items-center justify-center text-green-400">📞</div><div><span class="block text-white font-semibold">Línea directa</span><span class="text-slate-400">+52 468 120 8570 (CEO) · +52 419 129 6200 (COO)</span></div></div></div></div><div class="bg-slate-800/60 p-10 rounded-3xl border border-slate-700"><h3 class="text-2xl font-bold text-white">Sesión de diagnóstico estratégico</h3><p class="text-slate-400 mt-2">Analizamos sus necesidades y le presentamos una hoja de ruta con IA nativa, ejecutables o arquitectura cloud.</p><a href="solicitud-servicios.html" target="_blank" class="mt-8 w-full block text-center px-8 py-5 gradient-ia text-white font-bold rounded-xl text-lg hover:shadow-xl transition">Solicitar reunión ahora</a><p class="text-xs text-slate-500 text-center mt-6">Respuesta en menos de 24h · Confidencialidad garantizada</p></div></div>
+    </section>
+
+<footer class="bg-gradient-to-b from-slate-900 to-black border-t border-slate-800/50 py-16 text-center relative overflow-hidden">
+        <!-- Decorativo: gradiente sutil -->
+        <div class="absolute inset-0 bg-gradient-to-r from-blue-500/5 via-transparent to-cyan-500/5"></div>
+        
+        <!-- Logo mejorado con marco dinámico -->
+        <div class="relative z-10 flex flex-col items-center">
+            <div class="relative w-28 h-28 rounded-2xl overflow-hidden flex items-center justify-center bg-gradient-to-br from-blue-900/30 to-cyan-900/20 backdrop-blur-sm shadow-[0_0_40px_rgba(59,130,246,0.4)] border-2 border-blue-400/40" style="box-shadow: 0 0 50px -10px rgba(59, 130, 246, 0.5), inset 0 0 30px rgba(6, 182, 212, 0.15);">
+                <img src="assets/images/LogoGProAazulCartadeServicios Correcto.png" alt="GProA Logo" class="w-22 h-22 object-contain drop-shadow-[0_0_15px_rgba(255,255,255,0.4)]">
+            </div>
+            <p class="text-slate-400 text-sm mt-6 max-w-xl mx-auto leading-relaxed font-light">
+                <span class="font-semibold text-white">© 2026 GProA Technology</span> · Arquitectura de IA Nativa e Ingeniería Eléctrica 4.0 · Todas las marcas son propiedad de sus respectivos dueños.
             </p>
-        </div>
-
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Card 1: Frontend & UI/UX -->
-            <div class="card-hover bg-white rounded-2xl p-8 shadow-lg">
-                <div class="w-14 h-14 rounded-xl bg-blue-50 flex items-center justify-center mb-6">
-                    <svg class="w-7 h-7 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-                    </svg>
-                </div>
-                <h3 class="text-2xl font-bold text-slate-900 mb-4">Frontend de Vanguardia</h3>
-                <p class="text-slate-600 mb-6">
-                    Desarrollamos interfaces de usuario avanzadas y dashboards ejecutivos con React, Next.js y Tailwind CSS. Creamos experiencias intuitivas para la visualización de datos técnicos, métricas industriales y control de sistemas complejos.
-                </p>
-                <div class="flex flex-wrap gap-2">
-                    <span class="project-tag">React</span>
-                    <span class="project-tag">Next.js</span>
-                    <span class="project-tag">Tailwind</span>
-                    <span class="project-tag">D3.js</span>
-                </div>
-            </div>
-
-            <!-- Card 2: Backend & AI -->
-            <div class="card-hover bg-white rounded-2xl p-8 shadow-lg">
-                <div class="w-14 h-14 rounded-xl bg-purple-50 flex items-center justify-center mb-6">
-                    <svg class="w-7 h-7 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
-                    </svg>
-                </div>
-                <h3 class="text-2xl font-bold text-slate-900 mb-4">Backend & IA Generativa</h3>
-                <p class="text-slate-600 mb-6">
-                    Construimos APIs robustas, sistemas de procesamiento de lenguaje natural (NLP) e integraciones con modelos de IA como GPT y Copilot. Automatizamos flujos de trabajo complejos y análisis de big data para sectores industriales y de salud.
-                </p>
-                <div class="flex flex-wrap gap-2">
-                    <span class="project-tag">Node.js / Python</span>
-                    <span class="project-tag">APIs de IA</span>
-                    <span class="project-tag">Machine Learning</span>
-                    <span class="project-tag">Bases de Datos</span>
-                </div>
-            </div>
-
-            <!-- Card 3: Industrial Automation & Windows Software -->
-            <div class="card-hover bg-white rounded-2xl p-8 shadow-lg">
-                <div class="w-14 h-14 rounded-xl bg-cyan-50 flex items-center justify-center mb-6">
-                    <svg class="w-7 h-7 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
-                    </svg>
-                </div>
-                <h3 class="text-2xl font-bold text-slate-900 mb-4">Automatización & Software Windows</h3>
-                <p class="text-slate-600 mb-6">
-                    Nuestro diferenciador clave: <strong>programas ejecutables nativos para Windows</strong>. Desarrollamos software especializado para control industrial, cálculos de ingeniería eléctrica (NOM), gestión de gimnasios y domótica, con interfaz de escritorio de alto rendimiento.
-                </p>
-                <div class="flex flex-wrap gap-2">
-                    <span class="project-tag">.NET / C#</span>
-                    <span class="project-tag">Ejecutables Windows</span>
-                    <span class="project-tag">PLC / SCADA</span>
-                    <span class="project-tag">Automatización 4.0</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== FLAGSHIP PROJECTS ===== -->
-    <section id="proyectos" class="bg-slate-900 text-white py-24">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold mb-4">Proyectos <span class="text-gradient">Líderes en IA</span></h2>
-                <p class="text-xl text-slate-300 max-w-3xl mx-auto">
-                    Soluciones verticales especializadas que demuestran nuestra capacidad para integrar IA, automatización y desarrollo full-stack.
-                </p>
-            </div>
-
-            <div class="grid lg:grid-cols-2 gap-12">
-                <!-- Project 1: GECRAI -->
-                <div class="bg-slate-800 rounded-2xl p-8 card-hover border border-slate-700">
-                    <div class="flex justify-between items-start mb-6">
-                        <div>
-                            <span class="text-sm font-semibold text-blue-400 uppercase tracking-wide">IA para Ingeniería Eléctrica</span>
-                            <h3 class="text-3xl font-bold mt-2">GECRAI 1.1</h3>
-                            <p class="text-slate-400 mt-1">Generador de Cálculos Regulatorios con Asistencia Inteligente</p>
-                        </div>
-                        <span class="px-4 py-1 bg-green-900/30 text-green-400 rounded-full text-sm font-medium">Software Windows</span>
-                    </div>
-                    <p class="text-slate-300 mb-8">
-                        Asistente virtual con IA que genera memorias de cálculo eléctrico en PDF, optimiza conductores, calcula caída de tensión, corriente de cortocircuito (IEEE 1584) y valida el cumplimiento de la NOM-001-SEDE-2012. Integración con AutoCAD.
-                    </p>
-                    <div class="flex flex-wrap gap-3 mb-8">
-                        <span class="px-3 py-1 bg-slate-700 rounded-lg text-sm">IA Generativa</span>
-                        <span class="px-3 py-1 bg-slate-700 rounded-lg text-sm">Normativa NOM</span>
-                        <span class="px-3 py-1 bg-slate-700 rounded-lg text-sm">PDF Automático</span>
-                        <span class="px-3 py-1 bg-slate-700 rounded-lg text-sm">Integración CAD</span>
-                    </div>
-                    <a href="#" class="text-blue-400 font-semibold inline-flex items-center gap-2 hover:text-blue-300">
-                        Ver caso de estudio detallado
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
-                        </svg>
-                    </a>
-                </div>
-
-                <!-- Project 2: Sistema Búfalos -->
-                <div class="bg-slate-800 rounded-2xl p-8 card-hover border border-slate-700">
-                    <div class="flex justify-between items-start mb-6">
-                        <div>
-                            <span class="text-sm font-semibold text-purple-400 uppercase tracking-wide">ERP/CRM con IA</span>
-                            <h3 class="text-3xl font-bold mt-2">Sistema Búfalos 2.0</h3>
-                            <p class="text-slate-400 mt-1">Plataforma Integral de Gestión para Gimnasios</p>
-                        </div>
-                        <span class="px-4 py-1 bg-blue-900/30 text-blue-400 rounded-full text-sm font-medium">Full-Stack + IA</span>
-                    </div>
-                    <p class="text-slate-300 mb-8">
-                        ERP/CRM completo con pagos domiciliarios seguros, auto-inscripción digital, control de inventarios, nóminas y dashboards ejecutivos. Incluye análisis predictivo del comportamiento de clientes e integración con torniquetes y máquinas Vendix.
-                    </p>
-                    <div class="flex flex-wrap gap-3 mb-8">
-                        <span class="px-3 py-1 bg-slate-700 rounded-lg text-sm">ERP/CRM</span>
-                        <span class="px-3 py-1 bg-slate-700 rounded-lg text-sm">Pagos Domiciliarios</span>
-                        <span class="px-3 py-1 bg-slate-700 rounded-lg text-sm">Análisis Predictivo</span>
-                        <span class="px-3 py-1 bg-slate-700 rounded-lg text-sm">14 Tipos de Reportes</span>
-                    </div>
-                    <a href="#" class="text-blue-400 font-semibold inline-flex items-center gap-2 hover:text-blue-300">
-                        Explorar módulos del sistema
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
-                        </svg>
-                    </a>
-                </div>
-
-                <!-- Project 3: GlucAI -->
-                <div class="bg-slate-800 rounded-2xl p-8 card-hover border border-slate-700">
-                    <div class="flex justify-between items-start mb-6">
-                        <div>
-                            <span class="text-sm font-semibold text-cyan-400 uppercase tracking-wide">IA en Salud</span>
-                            <h3 class="text-3xl font-bold mt-2">GlucAI 1.5</h3>
-                            <p class="text-slate-400 mt-1">Plataforma de IA para Monitoreo y Gestión de Diabetes</p>
-                        </div>
-                        <span class="px-4 py-1 bg-purple-900/30 text-purple-400 rounded-full text-sm font-medium">HIPAA-Compliant</span>
-                    </div>
-                    <p class="text-slate-300 mb-8">
-                        Sistema predictivo de episodios de hipo/hiperglucemia mediante machine learning. Integra wearables, genera reportes clínicos automáticos y ofrece recomendaciones personalizadas de tratamiento para pacientes, médicos y familiares.
-                    </p>
-                    <div class="flex flex-wrap gap-3 mb-8">
-                        <span class="px-3 py-1 bg-slate-700 rounded-lg text-sm">Machine Learning</span>
-                        <span class="px-3 py-1 bg-slate-700 rounded-lg text-sm">Wearables</span>
-                        <span class="px-3 py-1 bg-slate-700 rounded-lg text-sm">Diagnóstico Predictivo</span>
-                        <span class="px-3 py-1 bg-slate-700 rounded-lg text-sm">Cifrado End-to-End</span>
-                    </div>
-                    <a href="#" class="text-blue-400 font-semibold inline-flex items-center gap-2 hover:text-blue-300">
-                        Conocer más sobre GlucAI
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
-                        </svg>
-                    </a>
-                </div>
-
-                <!-- Project 4: DomotIA -->
-                <div class="bg-slate-800 rounded-2xl p-8 card-hover border border-slate-700">
-                    <div class="flex justify-between items-start mb-6">
-                        <div>
-                            <span class="text-sm font-semibold text-green-400 uppercase tracking-wide">Domótica Inteligente</span>
-                            <h3 class="text-3xl font-bold mt-2">DomotIA 1.0</h3>
-                            <p class="text-slate-400 mt-1">Automatización Predictiva de Hogares con IA</p>
-                        </div>
-                        <span class="px-4 py-1 bg-cyan-900/30 text-cyan-400 rounded-full text-sm font-medium">IoT + IA</span>
-                    </div>
-                    <p class="text-slate-300 mb-8">
-                        Control inteligente de iluminación, climatización y seguridad mediante IA que aprende patrones de comportamiento. Incluye monitoreo energético, reconocimiento facial, integración con asistentes de voz y optimización predictiva del consumo.
-                    </p>
-                    <div class="flex flex-wrap gap-3 mb-8">
-                        <span class="px-3 py-1 bg-slate-700 rounded-lg text-sm">Automatización Predictiva</span>
-                        <span class="px-3 py-1 bg-slate-700 rounded-lg text-sm">Reconocimiento Facial</span>
-                        <span class="px-3 py-1 bg-slate-700 rounded-lg text-sm">Optimización Energética</span>
-                        <span class="px-3 py-1 bg-slate-700 rounded-lg text-sm">Asistentes de Voz</span>
-                    </div>
-                    <a href="#" class="text-blue-400 font-semibold inline-flex items-center gap-2 hover:text-blue-300">
-                        Descubrir características
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== METRICS & GARTNER ANALYSIS ===== -->
-    <section id="metricas" class="max-w-7xl mx-auto px-6 py-24">
-        <div class="text-center mb-16">
-            <h2 class="text-4xl md:text-5xl font-bold text-slate-900 mb-4">Impacto & <span class="text-gradient">Posicionamiento</span></h2>
-            <p class="text-xl text-slate-600 max-w-3xl mx-auto">
-                Nuestro crecimiento y especialización nos posicionan como referentes en el cuadrante de soluciones de IA industrial y desarrollo full-stack.
-            </p>
-        </div>
-
-        <!-- Gartner Magic Quadrant Inspired -->
-        <div class="bg-white rounded-2xl shadow-xl p-8 mb-16 border border-slate-200">
-            <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-8">
-                <div>
-                    <h3 class="text-2xl font-bold text-slate-900">Análisis Competitivo & Cuadrante de Soluciones</h3>
-                    <p class="text-slate-600">Basado en métricas de innovación, especialización y ejecución.</p>
-                </div>
-                <div class="mt-4 lg:mt-0">
-                    <span class="px-4 py-2 bg-blue-100 text-blue-800 rounded-full font-semibold">GProA: Líder en Nicho</span>
-                </div>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="text-center p-6 border rounded-xl">
-                    <div class="text-5xl font-black text-blue-600 mb-2">92/100</div>
-                    <div class="text-lg font-semibold text-slate-800 mb-2">Innovación</div>
-                    <p class="text-slate-600">Puntuación en desarrollo de soluciones disruptivas con IA Generativa.</p>
-                </div>
-                <div class="text-center p-6 border rounded-xl">
-                    <div class="text-5xl font-black text-purple-600 mb-2">88/100</div>
-                    <div class="text-lg font-semibold text-slate-800 mb-2">Especialización</div>
-                    <p class="text-slate-600">Enfoque en sectores de alta complejidad técnica y regulación.</p>
-                </div>
-                <div class="text-center p-6 border rounded-xl">
-                    <div class="text-5xl font-black text-green-600 mb-2">+340%</div>
-                    <div class="text-lg font-semibold text-slate-800 mb-2">Crecimiento IA</div>
-                    <p class="text-slate-600">Incremento en capacidades de IA en los últimos 3 años.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Performance Bars -->
-        <div class="grid md:grid-cols-2 gap-12">
-            <div>
-                <h4 class="text-2xl font-bold text-slate-900 mb-6">Eficiencia Operativa Demostrada</h4>
-                <div class="space-y-8">
-                    <div>
-                        <div class="flex justify-between mb-2">
-                            <span class="font-medium text-slate-700">Reducción en tiempo de reportes técnicos</span>
-                            <span class="font-bold text-blue-600">-82%</span>
-                        </div>
-                        <div class="h-3 bg-slate-200 rounded-full overflow-hidden">
-                            <div class="h-full bg-blue-600 rounded-full stat-bar" style="width: 82%"></div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="flex justify-between mb-2">
-                            <span class="font-medium text-slate-700">Reducción en análisis de datos manual</span>
-                            <span class="font-bold text-purple-600">-76%</span>
-                        </div>
-                        <div class="h-3 bg-slate-200 rounded-full overflow-hidden">
-                            <div class="h-full bg-purple-600 rounded-full stat-bar" style="width: 76%"></div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="flex justify-between mb-2">
-                            <span class="font-medium text-slate-700">Aceleración en desarrollo de software</span>
-                            <span class="font-bold text-green-600">3.5x</span>
-                        </div>
-                        <div class="h-3 bg-slate-200 rounded-full overflow-hidden">
-                            <div class="h-full bg-green-600 rounded-full stat-bar" style="width: 78%"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <h4 class="text-2xl font-bold text-slate-900 mb-6">Proyección de Mercado 2025-2027</h4>
-                <div class="bg-gradient-to-br from-slate-900 to-slate-800 text-white rounded-2xl p-8">
-                    <div class="text-4xl font-black mb-2">$47.2B</div>
-                    <div class="text-slate-300 mb-6">Mercado Global de IA Industrial</div>
-                    <div class="flex items-center justify-between p-4 bg-white/10 rounded-xl">
-                        <span class="font-medium">CAGR (2025-2027)</span>
-                        <span class="text-2xl font-bold text-green-400">23.4%</span>
-                    </div>
-                    <p class="text-slate-400 text-sm mt-6">
-                        GProA se enfoca en segmentos de alto valor dentro de este mercado: ingeniería automatizada, salud predictiva y gestión inteligente de instalaciones.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== WINDOWS EXECUTABLES - KEY DIFFERENTIATOR ===== -->
-    <section id="windows" class="bg-gradient-to-r from-blue-50 to-cyan-50 py-24">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center mb-16">
-                <div class="inline-flex items-center gap-3 bg-white rounded-full px-6 py-3 mb-6 shadow-sm">
-                    <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M3 5.557L7.357 5.18V11.16H21V5.557H3zM3 18.444L7.357 18.82V12.84H21V18.443H3z"/>
-                    </svg>
-                    <span class="font-bold text-slate-900">Nuestro Diferenciador Exclusivo</span>
-                </div>
-                <h2 class="text-4xl md:text-5xl font-bold text-slate-900 mb-4">Software Ejecutable para <span class="text-gradient">Windows</span></h2>
-                <p class="text-xl text-slate-700 max-w-3xl mx-auto">
-                    Más allá del desarrollo web y en la nube, entregamos <strong>aplicaciones nativas de escritorio para Windows</strong>, robustas, seguras y de alto rendimiento para entornos industriales y empresariales donde la conectividad o los navegadores son limitados.
-                </p>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white rounded-2xl p-8 shadow-lg border border-slate-200">
-                    <div class="w-12 h-12 rounded-lg bg-blue-100 flex items-center justify-center mb-6">
-                        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-bold text-slate-900 mb-4">Alto Rendimiento & Estabilidad</h3>
-                    <p class="text-slate-600">
-                        Aplicaciones compiladas nativas (.exe) que aprovechan al máximo los recursos del hardware, ideales para cálculos de ingeniería pesados, simulación en tiempo real y procesamiento local de grandes volúmenes de datos.
-                    </p>
-                </div>
-
-                <div class="bg-white rounded-2xl p-8 shadow-lg border border-slate-200">
-                    <div class="w-12 h-12 rounded-lg bg-purple-100 flex items-center justify-center mb-6">
-                        <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-bold text-slate-900 mb-4">Seguridad y Control Total</h3>
-                    <p class="text-slate-600">
-                        Sin dependencia de conexiones a internet constantes para funcionalidades críticas. Control absoluto sobre el entorno de ejecución, compliance con normativas sectoriales (NOM, ISO) y gestión de licencias offline.
-                    </p>
-                </div>
-
-                <div class="bg-white rounded-2xl p-8 shadow-lg border border-slate-200">
-                    <div class="w-12 h-12 rounded-lg bg-cyan-100 flex items-center justify-center mb-6">
-                        <svg class="w-6 h-6 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-bold text-slate-900 mb-4">Integración con Hardware Industrial</h3>
-                    <p class="text-slate-600">
-                        Comunicación directa con PLCs, sensores, puertos COM, y hardware especializado a través de drivers nativos. Esencial para sistemas SCADA, HMI, control de máquinas y adquisición de datos en planta.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Example Windows Software -->
-            <div class="mt-16 bg-white rounded-2xl shadow-xl p-8 border border-slate-300">
-                <div class="flex flex-col lg:flex-row items-center gap-8">
-                    <div class="lg:w-1/3">
-                        <div class="bg-slate-900 text-white rounded-xl p-6 text-center">
-                            <div class="text-5xl font-black mb-2">.exe</div>
-                            <div class="text-slate-300">Extensión de Archivo</div>
-                            <div class="mt-6 text-sm text-slate-400">Ejemplos: GECRAI_Setup.exe, SistemaBufalos.exe</div>
-                        </div>
-                    </div>
-                    <div class="lg:w-2/3">
-                        <h4 class="text-2xl font-bold text-slate-900 mb-4">Casos de Uso de Nuestro Software Windows</h4>
-                        <ul class="space-y-4">
-                            <li class="flex items-start gap-3">
-                                <svg class="w-5 h-5 text-green-500 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                </svg>
-                                <span><strong>Cálculos de ingeniería eléctrica en campo:</strong> Ingenieros realizan memorias de cálculo NOM en laptops sin conexión a internet.</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <svg class="w-5 h-5 text-green-500 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                </svg>
-                                <span><strong>Gestión de gimnasio en recepción:</strong> Software de escritorio para registro de miembros, control de acceso y ventas, integrado con hardware local (lectores de tarjeta, torniquetes).</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <svg class="w-5 h-5 text-green-500 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                </svg>
-                                <span><strong>Control de procesos industriales:</strong> Aplicación HMI/SCADA en computadoras de planta para monitoreo y control en tiempo real de líneas de producción.</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== TEAM & CONTACT ===== -->
-    <section id="contacto" class="max-w-7xl mx-auto px-6 py-24">
-        <div class="grid lg:grid-cols-3 gap-12">
-            <!-- Team Summary -->
-            <div class="lg:col-span-2">
-                <h2 class="text-4xl font-bold text-slate-900 mb-6">Equipo de <span class="text-gradient">Innovación</span></h2>
-                <p class="text-lg text-slate-600 mb-8">
-                    Un equipo multidisciplinario de ingenieros full-stack, especialistas en IA, ingenieros de control y automatización, y diseñadores de UX, comprometidos con el desarrollo de tecnologías accesibles y funcionales para sectores estratégicos.
-                </p>
-                <div class="grid sm:grid-cols-2 gap-6">
-                    <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
-                        <div class="font-bold text-slate-900 text-lg mb-1">Juan Abdel Lugo Trejo</div>
-                        <div class="text-blue-600 font-medium mb-3">CEO – Desarrollo Tecnológico</div>
-                        <p class="text-slate-600 text-sm">Lidera la visión tecnológica, desarrollo de IA y arquitectura de soluciones full-stack y ejecutables Windows.</p>
-                    </div>
-                    <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
-                        <div class="font-bold text-slate-900 text-lg mb-1">Israel Aldair Reséndiz Gálvez</div>
-                        <div class="text-purple-600 font-medium mb-3">COO – Administración & Operaciones</div>
-                        <p class="text-slate-600 text-sm">Gestiona la ejecución de proyectos, relaciones con clientes y la estructura operativa de la empresa.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Contact Card -->
-            <div class="bg-gradient-to-br from-slate-900 to-slate-800 text-white rounded-2xl p-8 shadow-xl">
-                <h3 class="text-2xl font-bold mb-2">Contacto Estratégico</h3>
-                <p class="text-slate-300 mb-8">Listos para colaborar en el desarrollo de su próxima solución tecnológica integral.</p>
-
-                <div class="space-y-6">
-                    <div class="flex items-start gap-4">
-                        <div class="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center flex-shrink-0">
-                            <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
-                            </svg>
-                        </div>
-                        <div>
-                            <div class="font-semibold">Centro de Operaciones GProA</div>
-                            <div class="text-slate-400 text-sm">Calle Libramiento Norte No. 30, Col. Loma de Buenavista<br>San José Iturbide, Guanajuato, México. C.P. 37980</div>
-                        </div>
-                    </div>
-
-                    <div class="flex items-start gap-4">
-                        <div class="w-10 h-10 rounded-full bg-purple-500/20 flex items-center justify-center flex-shrink-0">
-                            <svg class="w-5 h-5 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-                            </svg>
-                        </div>
-                        <div>
-                            <div class="font-semibold">Correo Electrónico</div>
-                            <a href="mailto:admin@gproatechnology.com" class="text-cyan-400 hover:text-cyan-300 text-sm block">admin@gproatechnology.com</a>
-                            <a href="mailto:trejulu@gproatechnology.com" class="text-cyan-400 hover:text-cyan-300 text-sm block">trejulu@gproatechnology.com</a>
-                            <a href="mailto:aldaz.rega@gproatechnology.com" class="text-cyan-400 hover:text-cyan-300 text-sm block">aldaz.rega@gproatechnology.com</a>
-                        </div>
-                    </div>
-
-                    <div class="flex items-start gap-4">
-                        <div class="w-10 h-10 rounded-full bg-green-500/20 flex items-center justify-center flex-shrink-0">
-                            <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
-                            </svg>
-                        </div>
-                        <div>
-                            <div class="font-semibold">Teléfono</div>
-                            <a href="tel:+5214681208570" class="text-slate-300 hover:text-white text-sm block">+52 1 468 120 8570 (CEO)</a>
-                            <a href="tel:+5214191296200" class="text-slate-300 hover:text-white text-sm block">+52 1 419 129 6200 (COO)</a>
-                        </div>
-                    </div>
-                </div>
-
-                <a href="mailto:trejulu@gproatechnology.com?subject=Consulta%20desde%20Sitio%20Web%20GProA" class="mt-8 w-full block text-center px-6 py-4 gradient-accent text-white font-bold rounded-xl hover:shadow-lg transition">
-                    Solicitar Sesión de Diagnóstico
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== FOOTER ===== -->
-    <footer class="bg-black text-slate-400 py-12 border-t border-slate-800">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="mb-6 md:mb-0">
-                    <div class="flex items-center gap-3 mb-4">
-                        <img src="assets/images/GProA_Logo2.jpeg" alt="GProA Logo" class="h-10 w-auto rounded-lg object-contain p-1 bg-white border border-slate-200">
-                        <div class="text-xl font-bold text-white">GProA Technology</div>
-                    </div>
-                    <p class="text-sm">Ingeniería Full-Stack · IA Generativa · Automatización Industrial · Software Windows</p>
-                </div>
-
-                <div class="flex items-center gap-6">
-                    <a href="https://gproatechnology.com" class="text-slate-400 hover:text-white transition">Sitio Oficial</a>
-                    <a href="#contacto" class="text-slate-400 hover:text-white transition">Contacto</a>
-                    <!-- PDF Download Link -->
-                    <a href="assets/pdfs/GProA_Technology_Partner_Brief_2025.pdf" download class="inline-flex items-center gap-2 px-4 py-2 bg-slate-800 hover:bg-slate-700 text-white text-sm rounded-lg transition">
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
-                        </svg>
-                        Descargar PDF Corporativo
-                    </a>
-                </div>
-            </div>
-
-            <div class="border-t border-slate-800 mt-8 pt-8 text-sm text-center md:text-left">
-                <p>© <span id="currentYear">2026</span> GProA Technology. Todos los derechos reservados. | Orgullosamente Mexicana.</p>
-                <p class="mt-2">Calle Libramiento Norte No. 30, Col. Loma de Buenavista, San José Iturbide, Guanajuato, México. C.P. 37980</p>
+            <div class="flex items-center gap-6 mt-6 text-slate-500 text-xs">
+                <a href="index.html" class="hover:text-blue-400 transition">Inicio</a>
+                <span class="text-slate-700">|</span>
+                <a href="#arquitectura" class="hover:text-blue-400 transition">Arquitectura</a>
+                <span class="text-slate-700">|</span>
+                <a href="#contacto" class="hover:text-blue-400 transition">Contacto</a>
+                <span class="text-slate-700">|</span>
+                <a href="assets/pdfs/GProA_Carta_Servicios 2026.pdf" download class="hover:text-blue-400 transition">Carta de Servicios</a>
             </div>
         </div>
     </footer>
 
-    <!-- ===== JAVASCRIPT ===== -->
     <script>
-        // Mobile Menu Toggle
-        document.getElementById('menuBtn').addEventListener('click', function() {
-            const menu = document.getElementById('mobileMenu');
-            menu.classList.toggle('hidden');
-        });
-
-        // Animate stat bars on scroll into view
-        function animateBarsOnScroll() {
-            const bars = document.querySelectorAll('.stat-bar');
-            bars.forEach(bar => {
-                const rect = bar.getBoundingClientRect();
-                if(rect.top < window.innerHeight - 50) {
-                    // Trigger animation by setting the width it already has (for the transition to work)
-                    const width = bar.style.width;
-                    bar.style.width = '0%';
-                    setTimeout(() => {
-                        bar.style.width = width;
-                    }, 100);
-                }
-            });
-        }
-        window.addEventListener('scroll', animateBarsOnScroll);
-        // Trigger once on load
-        setTimeout(animateBarsOnScroll, 500);
-
-        // Set current year in footer
-        document.getElementById('currentYear').textContent = new Date().getFullYear();
-
-        // Smooth scroll for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href');
-                if(targetId === '#') return;
-                const targetElement = document.querySelector(targetId);
-                if(targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                    // Close mobile menu if open
-                    document.getElementById('mobileMenu').classList.add('hidden');
-                }
-            });
-        });
+        (function(){
+            var nav=document.getElementById('mainNav'), overlay=document.getElementById('navOverlay'), menuBtn=document.getElementById('menuBtn'), mobileMenu=document.getElementById('mobileMenu'), lastScroll=0, visible=true;
+            function throttle(cb,delay){var t;return function(){var ctx=this,args=arguments;clearTimeout(t);t=setTimeout(function(){cb.apply(ctx,args)},delay);}}
+            var onScroll=throttle(function(){
+                var cur=window.scrollY;
+                if(cur>50){nav.classList.remove('initial');nav.classList.add('scrolled');if(overlay)overlay.style.background='linear-gradient(to right, rgba(15,23,42,0.7), rgba(30,41,59,0.5))';}
+                else{nav.classList.add('initial');nav.classList.remove('scrolled');if(overlay)overlay.style.background='transparent';}
+                if(cur>100 && cur>lastScroll && visible){nav.style.transform='translateY(-100%)';nav.style.opacity='0';nav.style.pointerEvents='none';visible=false;}
+                else if(cur<lastScroll && !visible){nav.style.transform='translateY(0)';nav.style.opacity='1';nav.style.pointerEvents='auto';visible=true;}
+                if(cur<=50){nav.style.transform='translateY(0)';nav.style.opacity='1';nav.style.pointerEvents='auto';visible=true;}
+                lastScroll=cur;
+            },16);
+            if(menuBtn&&mobileMenu){
+                let open=false;
+                menuBtn.addEventListener('click',function(e){e.preventDefault();open=!open;if(open){mobileMenu.style.display='block';void mobileMenu.offsetWidth;mobileMenu.classList.add('open');menuBtn.classList.add('hamburger-open');}else{mobileMenu.classList.remove('open');menuBtn.classList.remove('hamburger-open');setTimeout(function(){if(!open)mobileMenu.style.display='none';},300);}});
+                mobileMenu.querySelectorAll('a').forEach(a=>a.addEventListener('click',function(){open=false;mobileMenu.classList.remove('open');menuBtn.classList.remove('hamburger-open');setTimeout(()=>{if(!open)mobileMenu.style.display='none';},300);}));
+                mobileMenu.style.display='none';
+            }
+            document.querySelectorAll('a[href^="#"]:not([href="#"])').forEach(a=>a.addEventListener('click',function(e){let href=this.getAttribute('href');if(href){let target=document.querySelector(href);if(target){e.preventDefault();window.scrollTo({top:target.offsetTop-80,behavior:'smooth'});}}}));
+            window.addEventListener('scroll',onScroll,{passive:true}); onScroll();
+        })();
     </script>
 </body>
 </html>
+```

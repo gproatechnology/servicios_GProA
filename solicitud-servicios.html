@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Servicios · GProA Technology</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800;14..32,900&display=swap" rel="stylesheet">
+    <style>
+        * { font-family: 'Inter', sans-serif; }
+        .gradient-premium { background: linear-gradient(145deg, #0B1120 0%, #1A2538 50%, #1F2A3F 100%); }
+        .gradient-ia { background: linear-gradient(90deg, #2563eb 0%, #7c3aed 60%, #06b6d4 100%); }
+        .text-gradient-ia {
+            background: linear-gradient(135deg, #3b82f6, #8b5cf6, #2dd4bf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .card-enterprise {
+            border: 1px solid rgba(255,255,255,0.05);
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(8px);
+        }
+        .glass-tag {
+            background: rgba(59,130,246,0.12);
+            border: 1px solid rgba(59,130,246,0.25);
+            color: #bfdbfe;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-200 antialiased">
+
+<!-- Header -->
+    <header class="gradient-premium py-8 border-b border-slate-800">
+        <div class="max-w-5xl mx-auto px-6 flex items-center gap-4">
+<a href="index.html" class="flex items-center gap-2 px-4 py-2 bg-slate-800/60 hover:bg-slate-700/80 border border-slate-600/50 hover:border-blue-500/50 rounded-lg transition-all duration-300 group">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-slate-300 group-hover:text-blue-400 transition" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+                </svg>
+                <span class="text-slate-300 group-hover:text-white font-medium text-sm">Volver</span>
+            </a>
+            <img src="assets/images/GProA_Logo2.jpeg" alt="GProA Logo" class="w-12 h-12 rounded-xl">
+            <div>
+                <h1 class="text-2xl font-bold text-white">Solicitud de Servicios Profesionales</h1>
+                <p class="text-slate-400 text-sm">GProA Technology · IA Nativa · Automatización Inteligente</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-12">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-white">Cuéntenos sobre su <span class="text-gradient-ia">proyecto</span></h2>
+            <p class="text-slate-400 text-lg mt-4 max-w-2xl mx-auto">Complete este formulario para que nuestro equipo de ingeniería analice sus necesidades y le proponga una solución a la medida, basada en IA Nativa y arquitecturas de alto rendimiento.</p>
+        </div>
+
+        <form id="servicioForm" class="space-y-8">
+            <!-- ========== 1. DATOS DE LA EMPRESA ========== -->
+            <div class="card-enterprise p-8 rounded-2xl">
+                <h3 class="text-xl font-bold text-white mb-6 flex items-center gap-2">
+                    <span class="w-8 h-8 rounded-lg bg-blue-600/20 flex items-center justify-center text-blue-400">1</span>
+                    Datos de la Empresa / Organización
+                </h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-slate-300 text-sm font-medium mb-2">Nombre de la Empresa *</label>
+                        <input type="text" name="empresa" required class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-xl text-white focus:border-blue-500 focus:outline-none">
+                    </div>
+                    <div>
+                        <label class="block text-slate-300 text-sm font-medium mb-2">Sector / Giro *</label>
+                        <select name="sector" required class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-xl text-white focus:border-blue-500 focus:outline-none">
+                            <option value="">Seleccione un sector</option>
+                            <option value="Industrial">Industrial y Manufactura Avanzada</option>
+                            <option value="Salud">Salud (HealthTech)</option>
+                            <option value="Logistico">Logístico y Comercial</option>
+                            <option value="Electrico">Eléctrico (Energía)</option>
+                            <option value="Educacion">Educación (EdTech)</option>
+                            <option value="Hotelero">Hotelero y Turismo</option>
+                            <option value="Retail">Comercial y Retail</option>
+                            <option value="Financiero">Financiero / Fintech</option>
+                            <option value="Agricola">Agroindustrial</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-slate-300 text-sm font-medium mb-2">Nombre del Contacto *</label>
+                        <input type="text" name="contacto" required class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-xl text-white focus:border-blue-500 focus:outline-none">
+                    </div>
+                    <div>
+                        <label class="block text-slate-300 text-sm font-medium mb-2">Cargo / Posición</label>
+                        <input type="text" name="cargo" class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-xl text-white focus:border-blue-500 focus:outline-none">
+                    </div>
+                    <div>
+                        <label class="block text-slate-300 text-sm font-medium mb-2">Correo Electrónico *</label>
+                        <input type="email" name="email" required class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-xl text-white focus:border-blue-500 focus:outline-none">
+                    </div>
+                    <div>
+                        <label class="block text-slate-300 text-sm font-medium mb-2">Teléfono (con clave)</label>
+                        <input type="tel" name="telefono" class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-xl text-white focus:border-blue-500 focus:outline-none" placeholder="+52 1 55 1234 5678">
+                    </div>
+                    <div class="md:col-span-2">
+                        <label class="block text-slate-300 text-sm font-medium mb-2">Tamaño de la empresa</label>
+                        <select name="tamano" class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-xl text-white focus:border-blue-500 focus:outline-none">
+                            <option value="">Seleccione una opción</option>
+                            <option value="1-10">Micro (1-10 empleados)</option>
+                            <option value="11-50">Pequeña (11-50 empleados)</option>
+                            <option value="51-250">Mediana (51-250 empleados)</option>
+                            <option value="251-1000">Grande (251-1000 empleados)</option>
+                            <option value="1000+">Corporación (más de 1000 empleados)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========== 2. SERVICIOS REQUERIDOS ========== -->
+            <div class="card-enterprise p-8 rounded-2xl">
+                <h3 class="text-xl font-bold text-white mb-6 flex items-center gap-2">
+                    <span class="w-8 h-8 rounded-lg bg-purple-600/20 flex items-center justify-center text-purple-400">2</span>
+                    Servicios Requeridos
+                </h3>
+                <p class="text-slate-400 text-sm mb-4">Seleccione todos los servicios que necesita (puede marcar varios):</p>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <label class="flex items-center gap-3 p-4 bg-slate-800/50 rounded-xl cursor-pointer hover:bg-slate-800 transition">
+                        <input type="checkbox" name="servicios" value="IA Nativa y Agentic AI" class="w-5 h-5 rounded border-slate-600 text-blue-500 focus:ring-blue-500">
+                        <span class="text-white">IA Nativa y Agentic AI</span>
+                    </label>
+                    <label class="flex items-center gap-3 p-4 bg-slate-800/50 rounded-xl cursor-pointer hover:bg-slate-800 transition">
+                        <input type="checkbox" name="servicios" value="Software Ejecutable (.exe)" class="w-5 h-5 rounded border-slate-600 text-blue-500 focus:ring-blue-500">
+                        <span class="text-white">Software Ejecutable (.exe) / Edge</span>
+                    </label>
+                    <label class="flex items-center gap-3 p-4 bg-slate-800/50 rounded-xl cursor-pointer hover:bg-slate-800 transition">
+                        <input type="checkbox" name="servicios" value="Cloud & SaaS" class="w-5 h-5 rounded border-slate-600 text-blue-500 focus:ring-blue-500">
+                        <span class="text-white">Cloud & SaaS (Arquitectura cloud-native)</span>
+                    </label>
+                    <label class="flex items-center gap-3 p-4 bg-slate-800/50 rounded-xl cursor-pointer hover:bg-slate-800 transition">
+                        <input type="checkbox" name="servicios" value="Automatización Inteligente (RPA+IA)" class="w-5 h-5 rounded border-slate-600 text-blue-500 focus:ring-blue-500">
+                        <span class="text-white">Automatización Inteligente (RPA+IA)</span>
+                    </label>
+                    <label class="flex items-center gap-3 p-4 bg-slate-800/50 rounded-xl cursor-pointer hover:bg-slate-800 transition">
+                        <input type="checkbox" name="servicios" value="Transformación Digital / BI" class="w-5 h-5 rounded border-slate-600 text-blue-500 focus:ring-blue-500">
+                        <span class="text-white">Transformación Digital / Business Intelligence</span>
+                    </label>
+                    <label class="flex items-center gap-3 p-4 bg-slate-800/50 rounded-xl cursor-pointer hover:bg-slate-800 transition">
+                        <input type="checkbox" name="servicios" value="Kioskos Inteligentes & Edge" class="w-5 h-5 rounded border-slate-600 text-blue-500 focus:ring-blue-500">
+                        <span class="text-white">Kioskos Inteligentes & Edge Computing</span>
+                    </label>
+                    <label class="flex items-center gap-3 p-4 bg-slate-800/50 rounded-xl cursor-pointer hover:bg-slate-800 transition">
+                        <input type="checkbox" name="servicios" value="Integración Industrial (PLC/SCADA/OT)" class="w-5 h-5 rounded border-slate-600 text-blue-500 focus:ring-blue-500">
+                        <span class="text-white">Integración Industrial (PLC/SCADA/OT)</span>
+                    </label>
+                    <label class="flex items-center gap-3 p-4 bg-slate-800/50 rounded-xl cursor-pointer hover:bg-slate-800 transition">
+                        <input type="checkbox" name="servicios" value="Consultoría / Diagnóstico" class="w-5 h-5 rounded border-slate-600 text-blue-500 focus:ring-blue-500">
+                        <span class="text-white">Consultoría / Diagnóstico Estratégico</span>
+                    </label>
+                    <label class="flex items-center gap-3 p-4 bg-slate-800/50 rounded-xl cursor-pointer hover:bg-slate-800 transition">
+                        <input type="checkbox" name="servicios" value="Otro" class="w-5 h-5 rounded border-slate-600 text-blue-500 focus:ring-blue-500">
+                        <span class="text-white">Otro (especifique en comentarios)</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- ========== 3. DETALLES DEL PROYECTO ========== -->
+            <div class="card-enterprise p-8 rounded-2xl">
+                <h3 class="text-xl font-bold text-white mb-6 flex items-center gap-2">
+                    <span class="w-8 h-8 rounded-lg bg-cyan-600/20 flex items-center justify-center text-cyan-400">3</span>
+                    Detalles del Proyecto
+                </h3>
+                <div class="space-y-6">
+                    <div>
+                        <label class="block text-slate-300 text-sm font-medium mb-2">Título breve del proyecto *</label>
+                        <input type="text" name="titulo" required class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-xl text-white focus:border-blue-500 focus:outline-none" placeholder="Ej: Automatización de reportes financieros">
+                    </div>
+                    <div>
+                        <label class="block text-slate-300 text-sm font-medium mb-2">Descripción del proyecto o necesidad *</label>
+                        <textarea name="descripcion" required rows="5" class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-xl text-white focus:border-blue-500 focus:outline-none" placeholder="Describa brevemente qué problema desea resolver, los procesos involucrados y el objetivo de negocio..."></textarea>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-slate-300 text-sm font-medium mb-2">Presupuesto aproximado (MXN)</label>
+                            <select name="presupuesto" class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-xl text-white focus:border-blue-500 focus:outline-none">
+                                <option value="">Seleccione un rango</option>
+                                <option value="Menos de 50k">Menos de $50,000</option>
+                                <option value="50k-100k">$50,000 – $100,000</option>
+                                <option value="100k-250k">$100,000 – $250,000</option>
+                                <option value="250k-500k">$250,000 – $500,000</option>
+                                <option value="500k-1M">$500,000 – $1,000,000</option>
+                                <option value="Mas de 1M">Más de $1,000,000</option>
+                                <option value="Por definir">Por definir / requiero asesoría</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-slate-300 text-sm font-medium mb-2">Tiempo estimado de implementación</label>
+                            <select name="tiempo" class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-xl text-white focus:border-blue-500 focus:outline-none">
+                                <option value="">Seleccione</option>
+                                <option value="Urgente">Urgente (1-2 meses)</option>
+                                <option value="Corto">Corto plazo (3-6 meses)</option>
+                                <option value="Mediano">Mediano plazo (6-12 meses)</option>
+                                <option value="Largo">Largo plazo (más de 1 año)</option>
+                                <option value="Flexible">Flexible / sin fecha definida</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-slate-300 text-sm font-medium mb-2">¿Ya cuentan con algún sistema o infraestructura actual?</label>
+                        <textarea name="infraestructura" rows="3" class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-xl text-white focus:border-blue-500 focus:outline-none" placeholder="Ej: ERP, bases de datos locales, software legacy, PLCs, etc."></textarea>
+                    </div>
+                </div>
+            </div>
+
+<!-- ========== 4. DOCUMENTOS ADICIONALES (opcional) ========== -->
+            <div class="card-enterprise p-8 rounded-2xl">
+                <h3 class="text-xl font-bold text-white mb-6 flex items-center gap-2">
+                    <span class="w-8 h-8 rounded-lg bg-amber-600/20 flex items-center justify-center text-amber-400">4</span>
+                    Documentos de apoyo (opcional)
+                </h3>
+                <p class="text-slate-400 text-sm mb-4">Si cuenta con diagramas de flujo, mapas de procesos, pantallas del sistema actual, o imágenes que ilustren la problemática y estado deseado, puede compartirlos aquí para una mejor comprensión de su necesidad.</p>
+                <p class="text-slate-500 text-xs mb-6">Para documentación sensible o confidencial, le solicitamos compartirla exclusivamente por correo electrónico seguro.</p>
+                
+                <!-- Area de subida de archivos -->
+                <div class="mb-4">
+                    <input type="file" id="fileInput" name="archivos" multiple accept=".pdf,.doc,.docx,.xls,.xlsx,.ppt,.pptx,.png,.jpg,.jpeg" class="hidden" onchange="handleFiles(this.files)">
+                    <button type="button" onclick="document.getElementById('fileInput').click()" class="flex items-center gap-3 px-6 py-4 bg-gradient-to-r from-amber-600 to-orange-600 hover:from-amber-500 hover:to-orange-500 text-white font-semibold rounded-xl transition-all duration-300 shadow-lg shadow-amber-600/30 hover:shadow-amber-600/50 hover:scale-105">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+                        </svg>
+                        <span>Subir archivos</span>
+                    </button>
+                    <p class="text-slate-500 text-xs mt-2">Formatos permitidos: PDF, Word, Excel, PowerPoint, PNG, JPG (Máx. 10MB por archivo)</p>
+                </div>
+                
+                <!-- Lista de archivos seleccionados -->
+                <div id="fileList" class="space-y-2"></div>
+                
+                <textarea name="documentos" rows="3" class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-xl text-white focus:border-blue-500 focus:outline-none" placeholder="Describa brevemente qué documentación podría compartir o explicación adicional sobre los archivos."></textarea>
+            </div>
+
+            <!-- ========== 5. INFORMACIÓN ADICIONAL ========== -->
+            <div class="card-enterprise p-8 rounded-2xl">
+                <h3 class="text-xl font-bold text-white mb-6 flex items-center gap-2">
+                    <span class="w-8 h-8 rounded-lg bg-green-600/20 flex items-center justify-center text-green-400">5</span>
+                    Información Adicional
+                </h3>
+                <div class="space-y-6">
+                    <div>
+                        <label class="block text-slate-300 text-sm font-medium mb-2">¿Cómo se enteró de GProA Technology?</label>
+                        <select name="referencia" class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-xl text-white focus:border-blue-500 focus:outline-none">
+                            <option value="">Seleccione una opción</option>
+                            <option value="Google">Búsqueda en Google</option>
+                            <option value="LinkedIn">LinkedIn</option>
+                            <option value="Recomendacion">Recomendación de un colega/socio</option>
+                            <option value="Evento">Evento o conferencia</option>
+                            <option value="Redes">Redes sociales (X, Instagram, Facebook)</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-slate-300 text-sm font-medium mb-2">Comentarios adicionales</label>
+                        <textarea name="comentarios" rows="4" class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-xl text-white focus:border-blue-500 focus:outline-none" placeholder="¿Algo más que quiera compartir? (requisitos especiales, plazos, etc.)"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========== BOTÓN DE ENVÍO ========== -->
+            <div class="text-center">
+                <button type="submit" class="px-12 py-5 gradient-ia text-white font-bold rounded-xl text-xl hover:shadow-xl hover:scale-105 transition shadow-2xl shadow-blue-600/30">
+                    Enviar solicitud de servicios
+                </button>
+                <p class="text-slate-500 text-sm mt-4">La información será enviada directamente a <strong>admin@gproatechnology.com</strong></p>
+                <p class="text-slate-500 text-xs mt-2">Respuesta garantizada en menos de 24 horas hábiles</p>
+            </div>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t border-slate-800 py-8 mt-12">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <div class="flex items-center justify-center gap-3 mb-4">
+                <img src="assets/images/GProA_Logo2.jpeg" alt="GProA Logo" class="h-8">
+                <span class="text-lg font-bold text-white">GProA Technology</span>
+            </div>
+            <p class="text-slate-500 text-sm">IA Nativa. Soluciones Ejecutables. Escalabilidad sin Límites.</p>
+            <p class="text-slate-600 text-xs mt-2">© <span id="currentYear"></span> GProA Technology S. de R.L. de C.V.</p>
+        </div>
+    </footer>
+
+<script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Función para manejar la selección de archivos
+        function handleFiles(files) {
+            const fileList = document.getElementById('fileList');
+            fileList.innerHTML = ''; // Limpiar lista anterior
+            
+            if (files.length === 0) return;
+            
+            for (let i = 0; i < files.length; i++) {
+                const file = files[i];
+                const fileSize = (file.size / 1024 / 1024).toFixed(2); // Tamaño en MB
+                
+                if (fileSize > 10) {
+                    alert('El archivo ' + file.name + ' excede el límite de 10MB');
+                    continue;
+                }
+                
+                // Obtener icono según tipo de archivo
+                let iconSvg = '';
+                if (file.type.includes('pdf')) {
+                    iconSvg = '<svg class="w-5 h-5 text-red-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9 4a2 2 0 012-2h6a2 2 0 012 2v2h2a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h2V4z"/></svg>';
+                } else if (file.type.includes('word') || file.name.endsWith('.doc') || file.name.endsWith('.docx')) {
+                    iconSvg = '<svg class="w-5 h-5 text-blue-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"/><path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3z" clip-rule="evenodd"/></svg>';
+                } else if (file.type.includes('excel') || file.name.endsWith('.xls') || file.name.endsWith('.xlsx')) {
+                    iconSvg = '<svg class="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>';
+                } else if (file.type.includes('powerpoint') || file.name.endsWith('.ppt') || file.name.endsWith('.pptx')) {
+                    iconSvg = '<svg class="w-5 h-5 text-orange-400" fill="currentColor" viewBox="0 0 20 20"><path d="M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z"/></svg>';
+                } else if (file.type.includes('image')) {
+                    iconSvg = '<svg class="w-5 h-5 text-purple-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clip-rule="evenodd"/></svg>';
+                } else {
+                    iconSvg = '<svg class="w-5 h-5 text-slate-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" clip-rule="evenodd"/></svg>';
+                }
+                
+                const fileItem = document.createElement('div');
+                fileItem.className = 'flex items-center justify-between p-3 bg-slate-800 rounded-lg border border-slate-700';
+                fileItem.innerHTML = `
+                    <div class="flex items-center gap-3">
+                        ${iconSvg}
+                        <div>
+                            <p class="text-white text-sm font-medium">${file.name}</p>
+                            <p class="text-slate-500 text-xs">${fileSize} MB</p>
+                        </div>
+                    </div>
+                    <button type="button" onclick="removeFile(this, '${file.name}')" class="text-slate-500 hover:text-red-400 transition p-1">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                    </button>
+                `;
+                fileList.appendChild(fileItem);
+            }
+        }
+        
+        // Función para remover archivo
+        function removeFile(button, fileName) {
+            button.parentElement.remove();
+        }
+
+        document.getElementById('servicioForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const form = e.target;
+            const formData = new FormData(form);
+            
+            // Construir cuerpo del correo
+            let body = 'SOLICITUD DE SERVICIOS - GProA Technology\n';
+            body += '=============================================\n\n';
+            
+            body += '1. DATOS DE LA EMPRESA\n';
+            body += '----------------------------------------\n';
+            body += 'Empresa: ' + (formData.get('empresa') || '') + '\n';
+            body += 'Sector: ' + (formData.get('sector') || '') + '\n';
+            body += 'Tamaño: ' + (formData.get('tamano') || 'No especificado') + '\n';
+            body += 'Contacto: ' + (formData.get('contacto') || '') + '\n';
+            body += 'Cargo: ' + (formData.get('cargo') || '') + '\n';
+            body += 'Email: ' + (formData.get('email') || '') + '\n';
+            body += 'Teléfono: ' + (formData.get('telefono') || '') + '\n\n';
+            
+            body += '2. SERVICIOS REQUERIDOS\n';
+            body += '----------------------------------------\n';
+            const servicios = formData.getAll('servicios');
+            if (servicios.length > 0) {
+                servicios.forEach(s => body += '• ' + s + '\n');
+            } else {
+                body += 'Ninguno seleccionado\n';
+            }
+            body += '\n';
+            
+            body += '3. DETALLES DEL PROYECTO\n';
+            body += '----------------------------------------\n';
+            body += 'Título: ' + (formData.get('titulo') || '') + '\n';
+            body += 'Descripción:\n' + (formData.get('descripcion') || '') + '\n\n';
+            body += 'Presupuesto: ' + (formData.get('presupuesto') || 'No especificado') + '\n';
+            body += 'Tiempo estimado: ' + (formData.get('tiempo') || 'No especificado') + '\n';
+            body += 'Infraestructura actual:\n' + (formData.get('infraestructura') || 'No especificada') + '\n\n';
+            
+            body += '4. DOCUMENTOS ADICIONALES\n';
+            body += '----------------------------------------\n';
+            body += (formData.get('documentos') || 'Ninguno') + '\n\n';
+            
+            body += '5. INFORMACIÓN ADICIONAL\n';
+            body += '----------------------------------------\n';
+            body += 'Referencia: ' + (formData.get('referencia') || 'No especificada') + '\n';
+            body += 'Comentarios:\n' + (formData.get('comentarios') || 'Sin comentarios') + '\n';
+            
+            // Crear enlace mailto
+            const subject = 'Nueva Solicitud de Servicios - ' + (formData.get('empresa') || 'Empresa no indicada');
+            const mailtoLink = 'mailto:admin@gproatechnology.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+            
+            // Abrir cliente de correo
+            window.location.href = mailtoLink;
+            
+            // Opcional: mostrar mensaje de éxito
+            alert('Gracias por contactarnos. Su solicitud ha sido preparada y se abrirá su cliente de correo para que pueda enviarla. En breve nuestro equipo se pondrá en contacto.');
+        });
+    </script>
+</body>
+</html>

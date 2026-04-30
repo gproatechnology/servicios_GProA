@@ -8,6 +8,7 @@
 
 # Ejecutar desde la carpeta del proyecto:
 cd /workspaces/servicios_GProA
+C:\Users\Mao\OneDrive\Documentos\GProA Desarrollo\GProa_Servicios
 
 # Levantar servidor local
 python3 -m http.server 8000
